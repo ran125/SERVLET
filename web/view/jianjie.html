@@ -1,0 +1,186 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--<script src="../js/incubator-echarts-4.1.0/test/lib/esl.js"></script>-->
+    <!--<script src="../js/incubator-echarts-4.1.0/test/lib/config.js"></script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="../js/jquery-easyui-1.7.0/jquery.easyui.min.js"></script>
+</head>
+
+<body>
+<div data-options="region:'north'" style="height:100%">
+    <h1 align="center">莲花简介</h1>
+    <p style="font-size: 18px">&nbsp;&nbsp;&nbsp;&nbsp;牡丹江流域水力资源蕴藏丰富，在牡丹江流域目前最大装机容量的电厂为莲花发电厂，莲花发电厂位于牡丹江下游林口县与海林市交界处，距牡丹江市160公里，地理坐标为北纬45°26′，东经129°48′。莲花水库正常蓄水位218.0米，水库面积126
+        平方公里。水库长99.9公里，宽0.3～3.4公里，最大水深约60米。水库正常蓄水位218.0米，相应库容29.5亿立米，兴利库容14.9亿立米，是不完全多年调节水库；多年平均径流量71.3亿立米，设计洪峰流量(P=0.2%)17500立米/秒，校核洪峰流量(PMF)29800立米/秒
+        。莲花水库以发电为主，兼顾下游灌溉（5～8月份，水库出流量不小于50 立米/秒，城市生活及工业用水（冰期不小于35立米/秒 ）等综合利用的大型水库</p>
+
+    <div id="main1" style="width:60%;height:80%;float: left;"></div><div style="width:40%;height:80%;float: left;"><img src="../images/14.PNG" style="width:100% ;height: 100%"></div>
+</div>
+<div data-options="region:'south'" style="height:100%;">
+    <p style="font-size: 18px">&nbsp;&nbsp;&nbsp;&nbsp; 莲花发电厂共装有四台水轮发电机组，单机容量为137.5MW 总装机容量为 550MW ，设计年发电量 7.97 亿 KWh
+        ，年可利用小时 1449 小时，莲花发电厂于 1992 年开工兴建， 1994 年大江截流， 1996 年首台机组发电， 1998 年四台机组全部投产发电。提前两年完成了投产发电计划。
+        在每年只有八个月施工期的高寒地区，只用六年的时间就实现了二、四、六、八的奋斗目标，提前两年完成了投产发电计划，博得了“南有广蓄，北有莲花”的殊荣。</p>
+    <div style="width:40%;height:80%;float: left;"><img src="../images/lhdianli.PNG" style="width:100% ;height: 100%"></div><div id="main2" style="width:60%;height:80%;float: left;"></div>
+</div>
+
+<script type="text/javascript">
+    require([
+        'echarts'
+        // 'echarts/chart/line',
+        // 'echarts/chart/bar',
+        // 'echarts/component/legend',
+        // 'echarts/component/grid',
+        // 'echarts/component/tooltip'
+    ], function (echarts) {
+
+        var chart1 = echarts.init(document.getElementById('main1'), null, {});
+        var chart2 = echarts.init(document.getElementById('main2'), null, {});
+        var builderJson = {
+            "all": 10887,
+            "charts": {
+                "2010年": 2405,
+                "2011年": 1842,
+                "2012年": 2090,
+                "2013年": 1762,
+                "2014年": 1593,
+                "2015年": 2060,
+                "2016年": 1537,
+                "2017年": 3237
+            },
+            "ie": 9743
+        };
+
+        chart1.setOption({
+            tooltip: {},
+            title: [
+                {
+                    text: '莲花水电站历年发电量比例',
+                    x: '50%',
+                    y: '0%',
+                    textAlign: 'center'
+                }],
+            grid: [{
+                top: '10%',
+                width: '60%',
+                left: 10,
+                containLabel: true
+            }],
+            xAxis: [{
+                type: 'value',
+                max: builderJson.all,
+                splitLine: {
+                    show: false
+                }
+            }],
+            yAxis: [{
+                type: 'category',
+                data: Object.keys(builderJson.charts),
+                axisLabel: {
+                    interval: 0,
+                    rotate: 30
+                },
+                splitLine: {
+                    show: false
+                }
+            }],
+            series: [{
+                type: 'bar',
+                stack: 'chart',
+                z: 3,
+                itemStyle: {
+                    normal: {
+                        color: function (params) {
+                            var colorList = [
+                                '#C1232B', '#2f4554', '#61a0a8', '#d48265', '#91c7ae',
+                                '#749f83', '#ca8622', '#bda29a'
+                            ];
+                            return colorList[params.dataIndex]
+                        }
+                    }
+                },
+                label: {
+                    normal: {
+                        position: 'right',
+                        show: true
+                    }
+                },
+                data: Object.keys(builderJson.charts).map(function (key) {
+                    return builderJson.charts[key];
+                })
+            }, {
+                type: 'bar',
+                stack: 'chart',
+                silent: true,
+                itemStyle: {
+                    normal: {
+                        color: '#eee'
+                    }
+                },
+                data: Object.keys(builderJson.charts).map(function (key) {
+                    return builderJson.all - builderJson.charts[key];
+                })
+            }, {
+                type: 'pie',
+                radius: [0, '40%'],
+                center: ['75%', '45%'],
+                data: Object.keys(builderJson.charts).map(function (key) {
+                    return {
+                        name: key.replace('', ''),
+                        value: builderJson.charts[key]
+                    }
+                })
+            }]
+        });
+        chart2.setOption({
+            title: [
+                {
+                    text: '莲花水电站发电量往年同期比例',
+                    x: '50%',
+                    y: '0%',
+                    textAlign: 'center'
+                }],
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['2017年','2018年'],
+                y:'7%'
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+                }
+            ],
+            yAxis : [
+                {
+                    min:10000,
+                    max:1000000,
+                    type : 'value',
+                    name : '发电量',
+                    axisLabel : {
+                        formatter: '{value} kw'
+                    }
+                }
+            ],
+            series : [
+
+                {
+                    name:'2017年',
+                    type:'bar',
+                    data:[40000, 70000, 150000, 130000, 240000, 300000, 200000, 220000,180000, 150000, 230000,500000]
+                },
+                {
+                    name:'2018年',
+                    type:'bar',
+                    data:[30000, 90000, 120000, 170000, 200000, 320000, 170000, 250000,130000, 180000, 250000,450000]
+                }
+            ]
+        });
+
+    });
+
+
+</script>
+</body>
+</html>

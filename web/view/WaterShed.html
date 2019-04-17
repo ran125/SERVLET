@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link href="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.7.0/themes/metro/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.7.0/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.7.0/demo/demo.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/jquery-easyui-1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-easyui-1.7.0/jquery.easyui.min.js"></script>
+    <link href="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/css/pretty.css" rel="stylesheet">
+    <script src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/bootstrap.min.js"></script>
+    <script src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/bootstrap-select.min.js"></script>
+    <script src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/config.js"></script>
+    <script type="text/javascript" src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/require.min.js"
+            data-main="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/main.js"></script>
+    <script type="text/javascript" src="../js/jquery-easyui-1.7.0/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="../js/my_config.js"></script>
+    <script type="text/javascript" src="../js/WaterShed.js"></script>
+
+</head>
+<body>
+<div class="easyui-layout" id="cc" style="width:100%;height:100%;">
+    <div data-options="region:'center',split:true,tools:'#tt'" style="width:80%;  overflow: hidden ">
+        <div id="cesiumContainer" ></div>
+    </div>
+    <div data-options="region:'east', collapsed:true,split:true" title="场景信息" style="width:50%;overflow: hidden;" id="east-menu" >
+        <div style="background-color: white;height: 30px;width: 100%">
+
+            <button type="button" id="distance" class="easyui-linkbutton "><img src="../images/ceju.png" style="width: 20px;height: 20px">测 距</button>
+            <button type="button" id="area" class="easyui-linkbutton "><img src="../images/cemian.png" style="width: 20px;height: 20px">测 面</button>
+            <button type="button" id="height" class="easyui-linkbutton "><img src="../images/cegao副本.png" style="width: 20px;height: 20px">测 高</button>
+            <button type="button" id="clear" class="easyui-linkbutton "><img src="../images/qingchu.png" style="width: 15px;height: 15px">&nbsp;清 除</button>
+            </div>
+        <div id="cesiumContainer2" style="width: 100%;height: 100%" ></div>
+    </div>
+</div>
+
+
+</body>
+</html>

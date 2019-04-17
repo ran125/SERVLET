@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+	<Document>
+		<Placemark>
+                <styleUrl>#C</styleUrl>
+			<name>1</name>
+            <Point>
+                <coordinates>127.92800188064577,43.02807880491015,200 </coordinates>
+            </Point>
+		</Placemark>
+		<Placemark>
+        	<name>2</name>
+             <Point>
+                 <coordinates>127.88223266601564,43.08744206161231,200 </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+                	<name>3</name>
+                    <Point>
+                         <coordinates>127.8584146499634,43.137738411968925,200 </coordinates>
+                    </Point>
+          </Placemark>
+           <Placemark>
+                      <name>4</name>
+                      <Point>
+                          <coordinates>127.95390129089357,43.15840902932444,200 </coordinates>
+                      </Point>
+           </Placemark>
+             <Placemark>
+                       <name>5</name>
+                       <Point>
+                           <coordinates>128.0736351013184,43.211306469960064,200 </coordinates>
+                      </Point>
+            </Placemark>
+             <Placemark>
+                        <name>6</name>
+                        <Point>
+                             <coordinates>128.1783485412598,43.28494213901011,200 </coordinates>
+                        </Point>
+             </Placemark>
+             <Placemark>
+                        <name>7</name>
+                         <Point>
+                               <coordinates>128.22383880615237,43.34381779539488,200 </coordinates>
+                         </Point>
+             </Placemark>
+              <Placemark>
+                        <name>8</name>
+                         <Point>
+                                <coordinates>128.30859661102298,43.39296724017463,200 </coordinates>
+                         </Point>
+              </Placemark>
+               <Placemark>
+                         <name>9</name>
+                          <Point>
+                                <coordinates>128.3480787277222,43.459528455400275,200 </coordinates>
+                          </Point>
+               </Placemark>
+               <Placemark>
+                         <name>10</name>
+                          <Point>
+                                <coordinates>128.2731914520264,43.51481051222556,200 </coordinates>
+                          </Point>
+               </Placemark>
+               <Placemark>
+                         <name>11</name>
+                          <Point>
+                                <coordinates>128.22594165802005,43.666768830150524,200 </coordinates>
+                          </Point>
+               </Placemark>
+               <Placemark>
+                         <name>12</name>
+                          <Point>
+                                <coordinates>128.45203263854983,43.742684517745325,200 </coordinates>
+                          </Point>
+               </Placemark>
+               <Placemark>
+                         <name>13</name>
+                          <Point>
+                                <coordinates>128.53694915771487,43.66360799287726,200 </coordinates>
+                          </Point>
+               </Placemark>
+               <Placemark>
+                         <name>14</name>
+                          <Point>
+                                <coordinates>128.6036825180054,43.69449847638252,200 </coordinates>
+                          </Point>
+               </Placemark>
+               <Placemark>
+                         <name>15</name>
+                          <Point>
+                                <coordinates>128.75259876251224,43.76227754673419,200 </coordinates>
+                          </Point>
+               </Placemark>
+               <Placemark>
+                         <name>16</name>
+                          <Point>
+                                <coordinates>128.9229726791382,43.860320361392674,200 </coordinates>
+                          </Point>
+               </Placemark>
+               <Placemark>
+                         <name>17</name>
+                          <Point>
+                                <coordinates>128.9550304412842,44.05173540802715,200 </coordinates>
+                          </Point>
+               </Placemark>
+	</Document>
+</kml>

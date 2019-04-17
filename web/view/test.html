@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link href="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/css/pretty.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/test.css">
+    <script src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/jquery.min.js"></script>
+    <script src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/bootstrap.min.js"></script>
+    <script src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/bootstrap-select.min.js"></script>
+    <script src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/config.js"></script>
+    <script type="text/javascript" src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/require.min.js" data-main="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/main.js"></script>
+
+</head>
+<body>
+<div id="cesiumContainer">
+    <div id="vertical-slider"style="display: none;" ></div>
+    <audio loop="loop" src="../music/gqq.mp3" controls="controls" id="aa"></audio>
+</div>
+
+<div id='toolbar' class="param-container tool-bar ">
+    <span type="button" id="play" class="button black" title="开始"></span>
+    <span type="button" id="pause" class="button black" title="暂停"></span>
+    <span type="button" id="stop" class="button black" title="停止"></span>
+
+
+    <button type="button" id="distance" class="button black ">测距</button>
+    <button type="button" id="area" class="button black">测面</button>
+    <button type="button" id="height" class="button black">测高</button>
+    <button type="button" id="clear" class="button black">清除</button>
+
+   <div>
+    <span>参与卷帘图层</span>
+    <ul id="layer-list" style="padding: 0;margin: 0.5rem 0;">
+    </ul>
+</div>
+<div class="divider"></div>
+<div>
+    <span>卷帘模式</span>
+    <div style="padding: 0;margin: 0.5rem 0;">
+        <div style="margin: 0.2rem 0;">
+            <input type="checkbox" id="my_checkbox" name="box" checked>
+            <span style="vertical-align: middle;">使用卷帘</span></label>
+        </div>
+
+
+    </div>
+</div>
+
+    <div style="width: 150px;">
+        <select id="stopList" class="form-control" style="width: 100%;">
+            <!--<option disabled selected value>&#45;&#45;选择站点&#45;&#45;</option>-->
+        </select>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" id="show-line" checked> 显示飞行路线
+        </label>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" id="show-stop" checked> 显示飞行站点
+        </label>
+    </div>
+</div>
+
+</body>
+<script src="../js/test.js"></script>
+<script type="text/javascript" src="../js/measure.js"></script>
+<script type="text/javascript" src="../js/screen.js"></script>
+</html>

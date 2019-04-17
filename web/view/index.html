@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>莲花</title>
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.7.0/themes/metro/easyui.css">
+
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.7.0/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.7.0/demo/demo.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/jquery-easyui-1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-easyui-1.7.0/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="../js/echarts/echartsTest.js"></script>
+
+</head>
+
+<body class="easyui-layout" onload="shouye(echarts);" >
+<!--导航栏-->
+<div data-options="region:'north'" class="hader-nav">
+    <div class="header-left"><!--<img src="../images/logo.jpg" alt="莲花水电站三维地理信息系统">-->莲花电站三维系统</div>
+    <div class="header-center">
+        <ul class="list">
+            <li><a href="#" id="a1"><img src="../images/word.png" alt="场景" title="场景" onclick=""><br/><span>场景演示</span></a>
+            </li>
+            <li><a href="#" id="a2"><img src="../images/shapan.png" alt="场景" title="场景"><br/><span>电子沙盘</span></a></li>
+            <li><a href="#" id="a3"><img src="../images/celiang.png" alt="场景" title="场景"><br/><span>测量工具集</span></a>
+            </li>
+            <li><a href="#" id="a4"><img src="../images/jktb.png" alt="场景" title="场景"><br/><span>传感器</span></a>
+            </li>
+            <li><a href="#" id="a5"><img src="../images/t1.png" alt="场景" title="场景"><br/><span>特效</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-right">
+        <div class="header-right-sun">
+            <span class="easyui-linkbutton" data-options="plain:true,border:false,iconCls:'icon-man'">欢迎您：admin</span>|
+            <a href="#" class="easyui-menubutton" data-options="iconCls:'icon-edit'">设置</a>|
+            <a href="#" class="easyui-menubutton" data-options="iconCls:'icon-filter',menu:'#mm2'">主题</a>|
+            <span class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-no'">注销</span>
+        </div>
+    </div>
+</div>
+<!--导航栏结束-->
+<div class="daohang" data-options="region:'west',split:true,title:'菜单'" style="width:15%;">
+    <div class="easyui-accordion" data-options="fit:true,border:false,selected:false" style="background-color: #e7eaed"
+         id="leftMenu">
+        <div title="场景演示" class="beijing" id="Scene" data-options="selected:false">
+            <li>进入场景</li>
+        </div>
+        <div title="电子沙盘" class="beijing" id="sand">
+            <li onclick="addTab(this.innerHTML,'WaterShed.html')">全流域场景</li>
+            <li onclick="addTab(this.innerHTML,'DianXing.html')">典型场景</li>
+        </div>
+        <div title="测量工具集" class="beijing" id="measure">
+            <li onclick="addTab(this.innerHTML,'measure.html')">空间测量</li>
+        </div>
+        <div title="传感设备" class="beijing" id="changganqo">
+            <li onclick="addTab(this.innerHTML,'huozai.html')">容灾传感器</li>
+            <li id="chuanganqi" onclick="addTab(this.innerHTML,'shipincgq.html')">视频传感器</li>
+        </div>
+        <div title="动画特效" class="beijing" id="changjing">
+            <li onclick="addTab(this.innerHTML,'texiao.html')">场景动画</li>
+        </div>
+    </div>
+</div>
+<div data-options="region:'center'" style="border:0;">
+    <!-- 通过左边添加tabs-->
+    <div id="tts" class="easyui-tabs" data-options="border:false,fit:true">
+        <!--首页tabs页-->
+        <div class="easyui-layout" title="首页" style="padding:10px">
+            <div id="main1"></div>
+            <div id="main2"></div>
+        </div>
+    </div>
+</div>
+<!--下拉菜单-->
+<div id="mm2">
+    <div id="color1">默认主题</div>
+    <div id="color2">蓝色主题</div>
+    <div id="color3">红色主题</div>
+    <div id="color4">绿色主题</div>
+    <div id="color5">橙色主题</div>
+
+</div>
+
+<!-- menu -->
+<div id="mm" class="easyui-menu" style="width:120px;">
+    <div id="closeCurrent" name="closeCurrent" data-options="iconCls:'icon-no'">关闭当前</div>
+    <div id="closeAll" name="closeAll" data-options="iconCls:'icon-cancel'">关闭所有</div>
+</div>
+</body>
+
+<script type="text/javascript" src="../js/index.js"></script>
+</html>

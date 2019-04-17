@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="featureCollection">
+	<name>huozai.kml</name>
+	<open>1</open>
+	<Style id="sh_cewGyZOWXWA1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>../images/shexiangtou2.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_cewGyZOWXWA1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_cewGyZOWXWA1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_cewGyZOWXWA1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_cewGyZOWXWA1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>../images/shexiangtou2.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Folder>
+		<open>1</open>
+		<Placemark>
+			<name>B000001</name>
+			<styleUrl>#msn_cewGyZOWXWA1</styleUrl>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates> 129.803540135334 ,  45.4306539189481, 300</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B000002</name>
+			<styleUrl>#msn_cewGyZOWXWA1</styleUrl>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>129.800118801142 , 45.4299127357016, 300</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>B000003</name>
+			<styleUrl>#msn_cewGyZOWXWA1</styleUrl>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>129.800523009846 ,  45.4269512783017 ,  300</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

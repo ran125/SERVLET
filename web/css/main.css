@@ -1,0 +1,47 @@
+*{ margin:0; padding: 0; }
+a{ text-decoration: none; }
+.list{ width: 80%; height: 50px; margin: 0 auto; list-style-type:none; }
+.list li{ float: left; }
+.list li a{ color: #aaa; line-height: 50px; display: block;width:80px;text-align: center;}
+.list li a span{color: black;position: relative;top: -35px;font-size: 14px;left:0;}
+.hader-nav{height: 50px;overflow:hidden}
+.header-left{height:100%;background-color:#d4d4d4;float: left;width: 14.5%;padding: 15px 10px;color: black;font-size: 20px;text-align:center;}
+.header-center{height:100%;background:#d4d4d4;width: 55.5%;float:left;font-size: 16px;}
+.header-right{height:100%;background-color: #d4d4d4;float:right;width: 30%;padding: 8px;font-size: 16px;}
+#a1{position:absolute;left:14.5%;}
+#a1:hover{background:white;text-decoration-color: black;}
+#a2{position:absolute;left:20.3%;}
+#a2:hover{background:white;text-decoration-color: black;}
+#a3{position:absolute;left:26.1%;}
+#a3:hover{background:white;text-decoration-color: black;}
+#a4{position: absolute;left:32%;}
+#a4:hover{background:white;text-decoration-color: black;}
+#a5{position: absolute;left:37%;}
+#a5:hover{background:white;text-decoration-color: black;}
+.list li {height: 50px;}
+.list li img{width: 25px;height: 25px;position: relative;top: 0px;}
+.header-right-sun a,.header-right-sun,.header-right-sun span {color: black;}
+.header-right-sun{text-align: right}
+.easyui-linkbutton:hover{background:#e0ecff;}
+.easyui-menubutton:hover{background:#e0ecff;}
+.li:hover{
+    cursor:pointer;
+    background-color:#2c3b41;
+}
+.beijing{
+    list-style-image:url("../images/file1.png");
+}
+.beijing list-style-image{position: relative;top: 5px;}
+.li{text-align:center;}
+#leftMenu div li{cursor:pointer;}
+
+/*li*/
+.accordion .accordion-header {background: #e7eaed;}
+.panel-title {background-color:#e7eaed;color:black;} /*一级菜单字体颜色*/
+.accordion .accordion-header-selected .panel-title {color: black;} /*点击的字体颜色*/
+.beijing {background-color: white; color: black;}  /*二级菜单背景颜色,二级菜单字体颜色*/
+
+#main1{float: left;width: 50%;height:100%;}
+#main2{float: left;width: 50%;height:100%;}
+
+

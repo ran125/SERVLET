@@ -1,0 +1,132 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>典型场景</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link href="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.7.0/themes/metro/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.7.0/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../js/jquery-easyui-1.7.0/demo/demo.css">
+    <script type="text/javascript" src="../js/jquery-easyui-1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-easyui-1.7.0/jquery.easyui.min.js"></script>
+    <link href="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/css/pretty.css" rel="stylesheet">
+    <script src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/bootstrap.min.js"></script>
+    <script src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/bootstrap-select.min.js"></script>
+    <script src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/config.js"></script>
+    <script type="text/javascript" src="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/require.min.js" data-main="../js/SuperMap_iClient3D_9D_for_WebGL_1901211048/examples/js/main.js"></script>
+    <script type="text/javascript" src="../js/jquery-easyui-1.7.0/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="../js/jquery.contip.js"></script>
+
+</head>
+<body>
+
+<div class="easyui-layout" style="width:100%;height:100%;">
+
+    <div data-options="region:'center',split:true,tools:'#tt'" style="width:80%;overflow:hidden;">
+
+        <div id="tts" style="display: none;overflow:hidden;"  >
+            <a id="my_hr" href="javascript:void(0)" class="easyui-linkbutton"><img src="../images/jianjie.png" style="width: 20px;height: 20px">莲花简介</a>
+            <button type="button" id="distance" class="easyui-linkbutton "><img src="../images/ceju.png" style="width: 20px;height: 20px">测 距</button>
+            <button type="button" id="area" class="easyui-linkbutton "><img src="../images/cemian.png" style="width: 20px;height: 20px;">测 面</button>
+            <button type="button" id="height" class="easyui-linkbutton "><img src="../images/cegao副本.png" style="width: 20px;height: 20px">测 高</button>
+            <button type="button" id="clear" class="easyui-linkbutton "><img src="../images/qingchu.png" style="width: 15px;height: 15px;">&nbsp;清 除</button>
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="$('#createSchoolWindow').window('open')"><img src="../images/juanlian.PNG" style="width: 15px;height: 15px;">&nbsp;卷帘应用</a>
+        </div>
+        <div id="cesiumContainer" style="overflow: hidden ">
+            <div id="vertical-slider" style="display: none;"></div>
+        </div>
+
+    </div>
+    <div data-options="region:'west'," title="典型场景" style="width:20%;overflow:hidden;" class="easyui-layout;">
+        <div data-options="region:'north'" style="width:100%;height:93%;overflow:hidden;">
+            <input id="sousuo" class="easyui-searchbox" data-options="prompt:'请输入要搜索的内容',searcher:doSearch" style="width:100%;"/>
+            <li id="yi" style="list-style-type:none"><a href="#" id="qiao"><img src="../images/dian.jpg" ><br/></a></li>
+            <hr size="6px" color="#b8c7ce"/>
+            <li id="er" style="list-style-type:none"><a href="#" id="gc"><img src="../images/guangchang.jpg" ><br/></a></li>
+            <hr size="6px" color="#b8c7ce"/>
+            <li id="san" style="list-style-type:none"><a href="#" id="tx"><img src="../images/texiao.jpg" ><br/></a></li>
+        </div>
+        <div style="width:100%;height:7%;position: relative;left:10%; border: none;" class="easyui-pagination"
+             data-options="region:'center' ,showPageList: false,showRefresh: false,displayMsg: ''"></div>
+    </div>
+
+</div>
+
+
+<div id="lianhua" title="莲花" class="easyui-window" data-options="minimizable:false,collapsible:false"
+     style="width:90%;height:80%;padding:10px;">
+</div>
+
+
+<div id="createSchoolWindow" class="easyui-window" title="卷帘应用"
+     data-options="closed:true,minimizable:false,ClipCursor:true,collapsible:false"
+     style="width:18%;height:30%;padding:10px;">
+    <input type="checkbox" id="my_checkbox" name="box" checked>
+
+    <span style="vertical-align: middle;">使用卷帘</span>
+    <div>
+        <span>参与卷帘图层</span>
+        <ul id="juanlianqqq" style="padding: 0;margin: 0.5rem 0;">
+        </ul>
+    </div>
+
+
+</div>
+
+<div id="win" class="easyui-window" title="My Window" closed="true" style="width:33%;height:85%;padding:5px;" data-options="minimizable:false,collapsible:false,left:'66%',top:'5%'"></div>
+
+<script>
+    $("#my_hr").click(function ()
+    {
+        $("#lianhua").window('open');
+        $("#lianhua").window('refresh', 'jianjie.html');
+    });
+
+    function doSearch(value) {
+
+        if(value=="电站小桥"){
+            $("hr").hide();
+            $("#yi").show();
+            $("#er").hide();
+            $("#san").hide();
+
+        }else if(value=="中心广场"){
+            $("hr").hide();
+            $("#yi").hide();
+            $("#er").show();
+            $("#san").hide();
+
+
+        }else if (value=="电流观看场景"){
+            $("hr").hide();
+            $("#er").hide();
+            $("#yi").hide();
+            $("#san").show();
+        }else if (value==""){
+            $("#er").show();
+            $("#yi").show();
+            $("#san").show();
+            $("hr").show();
+        }else {
+            //$("li").remove("li[id=yi]");
+            $("li").hide();
+            $("hr").hide();
+        }
+    }
+
+
+</script>
+
+</body>
+<script type="text/javascript" src="../js/my_config.js"></script>
+<script type="text/javascript" src="../js/DianXing.js"></script>
+<script type="text/javascript" src="../js/measure.js"></script>
+<script type="text/javascript" src="../js/screen.js"></script>
+<script type="text/javascript" src="../js/qipao.js"></script>
+</html>

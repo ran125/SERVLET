@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="featureCollection">
+	<open>1</open>
+	<Style id="failed">
+		<IconStyle>
+		<scale>1</scale>
+			<Icon>
+				<href>../images/mdl4.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed0">
+		<IconStyle>
+			<Icon>
+				<href>../images/jbhsk2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="failed1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed3">
+		<IconStyle>
+		<scale>1</scale>
+			<Icon>
+				<href>../images/mdl4.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed4">
+		<IconStyle>
+			<Icon>
+				<href>../images/jbhsk2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed5">
+		<IconStyle>
+		<scale>1</scale>
+			<Icon>
+				<href>../images/dhs2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed6">
+		<IconStyle>
+			<Icon>
+				<href>../images/s.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed7">
+		<IconStyle>
+			<Icon>
+				<href>../images/mdjs2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed8">
+		<IconStyle>
+			<Icon>
+				<href>../images/hssk2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="failed9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed10">
+		<IconStyle>
+			<Icon>
+				<href>../images/hssk2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed11">
+		<IconStyle>
+			<Icon>
+				<href>../images/lc2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed12">
+		<IconStyle>
+			<Icon>
+				<href>../images/lc2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed13">
+		<IconStyle>
+			<Icon>
+				<href>../images/lhsdc2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="failed14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed15">
+		<IconStyle>
+			<Icon>
+				<href>../images/nas2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed16">
+		<IconStyle>
+			<Icon>
+				<href>../images/lhsdc2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="failed17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed13</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed19</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed19">
+		<IconStyle>
+			<Icon>
+				<href>../images/nas2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed20">
+		<IconStyle>
+		<scale>1</scale>
+			<Icon>
+				<href>../images/dhs2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="failed21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed22">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<open>1</open>
+		<Placemark id="1">
+			<styleUrl>#failed1</styleUrl>
+			<ExtendedData>
+				<Data name="content">
+				</Data>
+				<Data name="my_fileds">
+					<value>127.93288350105287,43.04496595181624,200</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>127.9328835010529,43.04496595181624,200</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="2">
+			<styleUrl>#failed21</styleUrl>
+			<ExtendedData>
+				<Data name="content">
+				</Data>
+				<Data name="my_fileds">
+					<value>128.2462137937546,43.35778631573646,200</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>128.2462137937546,43.35778631573646,200</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="3">
+			<styleUrl>#failed14</styleUrl>
+			<ExtendedData>
+				<Data name="content">
+				</Data>
+				<Data name="my_fileds">
+					<value>128.20420503616336,43.62532907210769,200</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>128.2042050361634,43.62532907210769,200</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="4">
+		<name>镜泊湖</name>
+			<styleUrl>#failed2</styleUrl>
+			<ExtendedData>
+				<Data name="content">
+				</Data>
+				<Data name="my_fileds">
+					<value>128.88190269470218,43.83280012812157,200</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>128.8819026947022,43.83280012812157,200</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="5">
+			<styleUrl>#failed22</styleUrl>
+			<ExtendedData>
+				<Data name="content">
+				</Data>
+				<Data name="my_fileds">
+					<value>128.93504261970523,44.046761501850916,200</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>128.9350426197052,44.04676150185092,200</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="6">
+			<styleUrl>#failed18</styleUrl>
+			<ExtendedData>
+				<Data name="content">
+				</Data>
+				<Data name="my_fileds">
+					<value>129.48616147041324,44.35401972428927,200</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>129.4861614704132,44.35401972428927,200</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="7">
+			<styleUrl>#failed9</styleUrl>
+			<ExtendedData>
+				<Data name="content">
+				</Data>
+				<Data name="my_fileds">
+					<value>129.62392508983615,44.57009438582685,200</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>129.6239250898362,44.57009438582685,200</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="8">
+			<styleUrl>#failed17</styleUrl>
+			<ExtendedData>
+				<Data name="content">
+				</Data>
+				<Data name="my_fileds">
+					<value>129.7995185852051,45.43266561326346,200</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>129.7995185852051,45.43266561326346,200</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
