@@ -48,7 +48,9 @@ function onload(Cesium) {
             camera: viewer.scene.camera,
             canvas: viewer.scene.canvas,
             clampToS3M : true//设置贴对象(s3m)
-        }))
+        })).then(function (dataSources) {
+            my_function_4(dataSources)
+        })
 
         var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/jingpohu.kml', {
             camera: viewer.scene.camera,
@@ -214,3 +216,16 @@ function my_function_3(data)
     setTimeout(function(){data.show = true;}, 100);
 }
 
+
+
+function my_function_4(my_datasource_2)
+{
+    var xx = setInterval(function(){my_function_5(my_datasource_2);}, 498);
+    //clearInterval(xx);
+}
+
+function my_function_5(data)
+{
+    setTimeout(function(){data.show = false;}, 1000);
+    setTimeout(function(){data.show = true;}, 100);
+}
