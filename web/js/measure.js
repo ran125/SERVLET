@@ -340,7 +340,7 @@ function onload(Cesium) {
         if (properties[1]=="莲花电力"){
             var img='<img src="../images/lhdianli.PNG"  style="width: 100%;height: 150px">'
             html += '<h1>' + img + '</h1>';
-            html += '<p style="font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;莲花发电厂共装有四台水轮发电机组，单机容量为137.5MW 总装机容量为 550MW ，设计年发电量 7.97 亿 KWh ，年可利用小时 1449 小时，莲花发电厂于 1992 年开工兴建， 1994 年大江截流， 1996 年首台机组发电， 1998 年四台机组全部投产发电。提前两年完成了投产发电计划。\n' +
+            html += '<p style="font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;莲花发电厂共装有四台水轮发电机组，单机容量为137.5MW 总装机容量为 550MW ，设计年发电量 7.97 亿 KWh ，年可利用小时 1449 小时，莲花发电厂于 1992 年开工兴建， 1994 年大江截流， 1996 年首台机组发电， 1998 年四台机组全部投产发电。提前两年完成了投产发电计划。\n'+
                 '在每年只有八个月施工期的高寒地区，只用六年的时间就实现了二、四、六、八的奋斗目标，提前两年完成了投产发电计划，博得了“南有广蓄，北有莲花”的殊荣。</p>';
             html+= '<div id="main3" style="width:100%;height:100%;"></div>';
             require([

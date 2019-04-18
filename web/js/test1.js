@@ -1,7 +1,12 @@
 var flyManager;
 var audio = document.getElementById("aa");
+<<<<<<< HEAD
 function onload(Cesium) {
     audio.pause();
+=======
+
+function onload(Cesium) {
+>>>>>>> origin/master
     var toolbar = document.getElementById('toolbar');
     var viewer = new Cesium.Viewer('cesiumContainer');
     //添加地形
@@ -34,6 +39,70 @@ function onload(Cesium) {
                 roll: 0
             }
         });
+//牡丹岭
+        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/mudanling.kml', {
+            camera: viewer.scene.camera,
+            canvas: viewer.scene.canvas,
+            clampToS3M : true//设置贴对象(s3m)
+        })).then(function(dataSources)
+        {
+            my_function_1(dataSources);
+        });
+
+        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/dunhuashi.kml', {
+            camera: viewer.scene.camera,
+            canvas: viewer.scene.canvas,
+            clampToS3M : true//设置贴对象(s3m)
+        })).then(function (dataSources) {
+            my_function_4(dataSources)
+        })
+
+        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/jingpohu.kml', {
+            camera: viewer.scene.camera,
+            canvas: viewer.scene.canvas,
+            clampToS3M : true//设置贴对象(s3m)
+        }))
+
+
+        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/laochang.kml', {
+            camera: viewer.scene.camera,
+            canvas: viewer.scene.canvas,
+            clampToS3M : true//设置贴对象(s3m)
+        }))
+
+        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/mudanjiang.kml', {
+            camera: viewer.scene.camera,
+            canvas: viewer.scene.canvas,
+            clampToS3M : true//设置贴对象(s3m)
+        }))
+
+        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/lianhua.kml', {
+            camera: viewer.scene.camera,
+            canvas: viewer.scene.canvas,
+            clampToS3M : true//设置贴对象(s3m)
+        }))
+        viewer.dataSources.add(Cesium.KmlDataSource.load('../js/newhbh.kml', {
+            camera: viewer.scene.camera,
+            canvas: viewer.scene.canvas,
+           // clampToS3M: true//设置贴对象(s3m)
+        })).then(function (dataSource) {
+            entity_collection = dataSource.entities;
+            my_entity_array = entity_collection.values;
+            for (var i = 0; i < my_entity_array.length; i++) {
+                if (Cesium.defined(my_entity_array[i].billboard)) {
+                    my_entity_array[i].billboard.width = 150;
+                    my_entity_array[i].billboard.height = 50;
+
+                    my_entity_array[i].billboard.distanceDisplayCondition = new Cesium.DistanceDisplayCondition(1.0, 4800000000.0);
+                    my_entity_array[i].billboard.verticalOrigin = Cesium.VerticalOrigin.BOTTOM;// 调整垂直方向的原点，保证图标里的针尖对着地表位置
+                }
+            }
+        });
+        // viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly.kml', {
+        //     camera: viewer.scene.camera,
+        //     canvas: viewer.scene.canvas,
+        //     clampToS3M: true//设置贴对象(s3m)
+        // }));
 
 
         //添加全流域线-----------------------------------------------------------------------------------
@@ -99,6 +168,13 @@ function onload(Cesium) {
             if (audio.paused) { //判读是否播放  
                 audio.paused = false;
                 audio.play(); //没有就播放 
+                flyManager.play();
+            }
+        }
+
+        //相机飞行
+        viewer.camera.flyTo({
+            destination: Cesium.Cartesian3.fromDegrees(128.62950188064577, 44.32807880491015, 435000), // 设置位置
             }
         }
         //全流域飞行
@@ -120,6 +196,7 @@ function onload(Cesium) {
             //flyOverLongitude: 100, // 如果到达目的地有2种方式，设置具体值后会强制选择方向飞过这个经度
             // 到达位置后执行的回调函数
             complete: function () {
+               // setTimeout(bofang, 10000);
                 bofang();
                 addqly();
                 bs();
@@ -261,5 +338,19 @@ function onload(Cesium) {
     });
 }
 
+function my_function_1(data)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100);}, 500);
+    //clearInterval(xx);
+}
 
+function my_function_4(data)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    //clearInterval(xx);
+}
 
