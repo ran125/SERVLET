@@ -204,28 +204,19 @@ function onload(Cesium) {
     });
 }
 
-function my_function_1(my_datasource_1)
+function my_function_1(data)
 {
-    var xx = setInterval(function(){my_function_3(my_datasource_1);}, 500);
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100);}, 500);
     //clearInterval(xx);
 }
 
-function my_function_3(data)
+function my_function_4(data)
 {
-    setTimeout(function(){data.show = false;}, 1000);
-    setTimeout(function(){data.show = true;}, 100);
-}
-
-
-
-function my_function_4(my_datasource_2)
-{
-    var xx = setInterval(function(){my_function_5(my_datasource_2);}, 498);
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
     //clearInterval(xx);
 }
 
-function my_function_5(data)
-{
-    setTimeout(function(){data.show = false;}, 1000);
-    setTimeout(function(){data.show = true;}, 100);
-}
