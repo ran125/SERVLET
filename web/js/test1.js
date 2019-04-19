@@ -1,12 +1,11 @@
 var flyManager;
 var audio = document.getElementById("aa");
-
 function onload(Cesium) {
-    audio.pause();
+    audio.play();
     var toolbar = document.getElementById('toolbar');
     var viewer = new Cesium.Viewer('cesiumContainer');
     //添加地形
-    /* var terrainProvider = new Cesium.CesiumTerrainProvider({
+/*     var terrainProvider = new Cesium.CesiumTerrainProvider({
          url: 'https://www.supermapol.com/realspace/services/3D-stk_terrain/rest/realspace/datas/info/data/path',
          // requestVertexNormals:?true,
          requestWaterMask: true
@@ -186,10 +185,10 @@ function onload(Cesium) {
                 }
             });
             viewer.camera.setView({
-                destination: Cesium.Cartesian3.fromDegrees(129.35050188064577, 42.22807880491015, 300000), // 设置位置
+                destination: Cesium.Cartesian3.fromDegrees(129.38840188064577, 42.70417880491015, 150000), // 设置位置
                 orientation: {
-                    heading: Cesium.Math.toRadians(-20.0), // 方向
-                    pitch: Cesium.Math.toRadians(-55.0),// 倾斜角度
+                    heading: Cesium.Math.toRadians(-25.0), // 方向
+                    pitch: Cesium.Math.toRadians(-45.0),// 倾斜角度
                     roll: 0
                 }
             });
@@ -199,7 +198,7 @@ function onload(Cesium) {
             var i = 1;
             xunhua = setInterval(scoreCounter, 1000);
             function scoreCounter() {
-                if (i < 9) {
+                if (i < 16) {
                     my_entity_array[i].billboard.color = Cesium.Color.YELLOW
                     i++;
                 }
@@ -221,12 +220,12 @@ function onload(Cesium) {
               }*/
 
         //音乐播放与飞行开始--------------------------------------------------------------------------------------------------------
-        function bofang() {
+   /*     function bofang() {
             if (audio.paused) { //判读是否播放??
                 audio.paused = false;
                 audio.play(); //没有就播放?
             }
-        }
+        }*/
 
         //全流域飞行
         function flys() {
@@ -240,14 +239,14 @@ function onload(Cesium) {
 
         //相机飞行
         viewer.camera.flyTo({
-            destination: Cesium.Cartesian3.fromDegrees(128.62950188064577, 44.32807880491015, 1430), // 设置位置
-            duration: 10, // 设置飞行持续时间，默认会根据距离来计算
+            destination: Cesium.Cartesian3.fromDegrees(128.62950188064577, 44.32807880491015, 14300), // 设置位置
+            duration: 11, // 设置飞行持续时间，默认会根据距离来计算
             pitchAdjustHeight: -90, // 如果摄像机飞越高于该值，则调整俯仰俯仰的俯仰角度，并将地球保持在视口中。
             //maximumHeight:5000, // 相机最大飞行高度
             //flyOverLongitude: 100, // 如果到达目的地有2种方式，设置具体值后会强制选择方向飞过这个经度
             // 到达位置后执行的回调函数
             complete: function () {
-                bofang();
+               /* bofang();*/
                 addqly();
                 bs();
                 //setTimeout(flys, 10000);
