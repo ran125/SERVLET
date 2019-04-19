@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>宁安市到牡丹江市.kml</name>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff8e4f00</color>
+			<width>1000</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff7fffff</color>
+			<width>100</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>qly</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				129.5142125052917,44.34356279237744,0 129.5073633567792,44.35969331810039,0 129.488389978229,44.36836145572069,0 129.4875075934793,44.37520148350592,0 129.5085197753088,44.38112699230673,0 129.4989167089536,44.39982193869469,0 129.51221480425,44.4033189445065,0 129.5177746456579,44.42099990773456,0 129.5090509307715,44.42759742722024,0 129.4773683019378,44.42333456544847,0 129.4653389591368,44.44232260360496,0 129.4811930157935,44.46348984438613,0 129.4776403403018,44.48634444103849,0 129.495701280201,44.47858767818362,0 129.5130522026931,44.47154517590128,0 129.53699733666,44.4959329171738,0 129.5439274184901,44.52124499613161,0 129.5377727356315,44.53521596075473,0 129.5463667747254,44.54638805449082,0 129.5894925820208,44.54616030160955,0 129.6106558768736,44.550634646066,0 129.6315770591107,44.56587343557557,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

@@ -39,8 +39,8 @@ function onload(Cesium) {
 
         //添加全流域线-----------------------------------------------------------------------------------
         function addqly() {
-            //牡丹岭
-            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/mudanling.kml', {
+            //牡丹岭到江源镇
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/mudanling.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
@@ -50,8 +50,8 @@ function onload(Cesium) {
                 setTimeout(function(){my_function_1(dataSources,time)}, 2000);
 
             });
-
-            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/dunhuashi.kml', {
+            //江源镇到敦化市
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/jiangyuanzhen.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
@@ -60,8 +60,8 @@ function onload(Cesium) {
                 dataSources.show=false;
                 setTimeout(function(){my_function_2(dataSources,time)}, 3000);
             })
-
-            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/jingpohu.kml', {
+            //敦化市到上沟水库
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/dunhuashi.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
@@ -71,8 +71,8 @@ function onload(Cesium) {
                 setTimeout(function(){my_function_3(dataSources,time)}, 4000);
             })
 
-
-            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/laochang.kml', {
+            //上沟水库到西崴子水库
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/shanggoushuiku.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
@@ -82,8 +82,8 @@ function onload(Cesium) {
                 setTimeout(function(){my_function_4(dataSources,time)}, 5000);
 
             })
-
-            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/mudanjiang.kml', {
+            //西崴子水库到黑市水库
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/xiwaizi.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
@@ -93,8 +93,8 @@ function onload(Cesium) {
                 setTimeout(function(){my_function_5(dataSources,time)}, 6000);
 
             })
-
-            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/lianhua.kml', {
+        //黑石水库到雁鸣湖
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/heishishuiku.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
@@ -105,6 +105,64 @@ function onload(Cesium) {
 
             })
 
+
+            //雁鸣湖到镜泊湖
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/yanminghu.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            })).then(function (dataSources,time) {
+                time=2000
+                dataSources.show=false;
+                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
+
+            })
+
+
+            //镜泊湖到宁安市
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/jingpohu.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            })).then(function (dataSources,time) {
+                time=2000
+                dataSources.show=false;
+                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
+
+            })
+
+            //宁安市到牡丹江
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/ningan.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            })).then(function (dataSources,time) {
+                time=2000
+                dataSources.show=false;
+                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
+
+            })
+            //牡丹江到莲花水电厂
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/mudanjiang.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            })).then(function (dataSources,time) {
+                time=2000
+                dataSources.show=false;
+                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
+
+            })
+            //莲花水电厂到乌斯浑河
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/lianhua.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            })).then(function (dataSources,time) {
+                time=2000
+                dataSources.show=false;
+                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
+            })
             // my_datasource_1.dataSource.show=false
          /*   viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly.kml', {
                 camera: viewer.scene.camera,
