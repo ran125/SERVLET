@@ -1,3 +1,5 @@
+var entity=null;
+var shu=0;
 function onload(Cesium) {
     var viewer = new Cesium.Viewer('cesiumContainer',{
         infoBox: false,
@@ -18,6 +20,7 @@ function onload(Cesium) {
         clampToS3M : true//设置贴对象(s3m)
 
     })).then(function (dataSource) {
+        entity=dataSource.entities.values;
         entity_collection = dataSource.entities;
         my_entity_array = entity_collection.values;
         for (var i = 0; i < my_entity_array.length; i++) {
@@ -32,6 +35,8 @@ function onload(Cesium) {
                 var html="";
 
                 if (pick && pick.id.name=="A000001"){
+                    shu=1;
+                    my_entity_array[shu].billboard.color = Cesium.Color.BLUE;
                     $('#win11').window('open');
                     // alert("dsaa")name
                     html+='<h3  align="center">A区摄像头传感器</h3>'
@@ -40,6 +45,8 @@ function onload(Cesium) {
                     document.getElementById("win11").innerHTML=html;
                 }
                 if (pick && pick.id.name=="A000002"){
+                    shu=2;
+                    my_entity_array[shu].billboard.color = Cesium.Color.BLUE;
                     $('#win11').window('open');
                     // alert("dsaa")name
                     html+='<h3  align="center">A区摄像头传感器</h3>'
@@ -48,6 +55,8 @@ function onload(Cesium) {
                     document.getElementById("win11").innerHTML=html;
                 }
                 if (pick && pick.id.name=="A000003"){
+                    shu=3;
+                    my_entity_array[shu].billboard.color = Cesium.Color.BLUE;
                     $('#win11').window('open');
                     // alert("dsaa")name
                     html+='<h3  align="center">A区摄像头传感器</h3>'

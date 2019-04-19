@@ -1,3 +1,5 @@
+var entity=null;
+var shu=0;
 function onload(Cesium) {
     var viewer = new Cesium.Viewer('cesiumContainer',{
         infoBox: false,
@@ -18,13 +20,13 @@ function onload(Cesium) {
         });
     });
 
-
     viewer.dataSources.add(Cesium.KmlDataSource.load('../js/huozai.kml', {
         camera: viewer.scene.camera,
         canvas: viewer.scene.canvas,
         clampToS3M : true//设置贴对象(s3m)
 
     })).then(function (dataSource) {
+        entity=dataSource.entities.values;
         entity_collection = dataSource.entities;
         my_entity_array = entity_collection.values;
         for (var i = 0; i < my_entity_array.length; i++) {
@@ -37,8 +39,9 @@ function onload(Cesium) {
             handler.setInputAction(function (click) {
                 var pick = viewer.scene.pick(click.position);
                 var html="";
-
                 if (pick && pick.id.name=="B000001"){
+                    shu=1;
+                    my_entity_array[shu].billboard.color = Cesium.Color.BLUE;
                     $('#huozai').window('open');
                     html+='<h3  align="center">B区摄像头传感器</h3>';
                     html+='<p align="center" style="font-weight:bold">传感器编号：B000001, 传感器状态: 正常, 当前无火灾情况：&nbsp;<img src="../images/fire.png" width="20px" height="20px" /></p>';
@@ -46,6 +49,8 @@ function onload(Cesium) {
                     document.getElementById("huozai").innerHTML=html;
                 }
                 if (pick && pick.id.name=="B000002"){
+                    shu=2;
+                    my_entity_array[shu].billboard.color = Cesium.Color.BLUE;
                     $('#huozai').window('open');
                     html+='<h3  align="center">B区摄像头传感器</h3>';
                     html+='<p align="center" style="font-weight:bold">传感器编号：B000001, 传感器状态: 正常, 当前无火灾情况：&nbsp;<img src="../images/fire.png" width="20px" height="20px" /></p>';
@@ -53,6 +58,8 @@ function onload(Cesium) {
                     document.getElementById("huozai").innerHTML=html;
                 }
                 if (pick && pick.id.name=="B000003"){
+                    shu=3;
+                    my_entity_array[shu].billboard.color = Cesium.Color.BLUE;
                     $('#huozai').window('open');
                     html+='<h3  align="center">B区摄像头传感器</h3>';
                     html+='<p align="center" style="font-weight:bold">传感器编号：B000001, 传感器状态: 正常, 当前无火灾情况：&nbsp;<img src="../images/fire.png" width="20px" height="20px" /></p>';
