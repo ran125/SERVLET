@@ -45,7 +45,9 @@ function onload(Cesium) {
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
             })).then(function (dataSources) {
-                my_function_1(dataSources);
+                // my_function_1(dataSources);
+                dataSources.show=false;
+                setTimeout(function(){my_function_1(dataSources)}, 2000);
             });
 
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/dunhuashi.kml', {
@@ -53,7 +55,9 @@ function onload(Cesium) {
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
             })).then(function (dataSources) {
-                my_function_2(dataSources)
+
+                dataSources.show=false;
+                setTimeout(function(){my_function_2(dataSources)}, 3000);
             })
 
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/jingpohu.kml', {
@@ -61,7 +65,9 @@ function onload(Cesium) {
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
             })).then(function (dataSources) {
-                my_function_3(dataSources)
+
+                dataSources.show=false;
+                setTimeout(function(){my_function_3(dataSources)}, 4000);
             })
 
 
@@ -70,7 +76,10 @@ function onload(Cesium) {
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
             })).then(function (dataSources) {
-                my_function_4(dataSources)
+                // my_function_4(dataSources)
+                dataSources.show=false;
+                setTimeout(function(){my_function_4(dataSources)}, 5000);
+
             })
 
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/mudanjiang.kml', {
@@ -78,7 +87,10 @@ function onload(Cesium) {
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
             })).then(function (dataSources) {
-                my_function_5(dataSources)
+                // my_function_5(dataSources)
+                dataSources.show=false;
+                setTimeout(function(){my_function_5(dataSources)}, 6000);
+
             })
 
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/lianhua.kml', {
@@ -86,7 +98,10 @@ function onload(Cesium) {
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
             })).then(function (dataSources) {
-                my_function_6(dataSources)
+                // my_function_6(dataSources)
+                dataSources.show=false;
+                setTimeout(function(){my_function_6(dataSources)}, 7000);
+
             })
          /*   viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly.kml', {
                 camera: viewer.scene.camera,
@@ -362,4 +377,5 @@ function my_function_6(data)
         setTimeout(function(){data.show = true;}, 100); }, 498);
     //clearInterval(xx);
 }
+
 
