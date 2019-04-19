@@ -168,7 +168,7 @@
 	<Style id="failed15">
 		<IconStyle>
 			<Icon>
-				<href>../images/nas2.png</href>
+				<href>../images/nas1.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -208,7 +208,7 @@
 	<Style id="failed19">
 		<IconStyle>
 			<Icon>
-				<href>../images/nas2.png</href>
+				<href>../images/nas1.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>

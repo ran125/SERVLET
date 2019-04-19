@@ -1,22 +1,18 @@
 var flyManager;
 var audio = document.getElementById("aa");
-<<<<<<< HEAD
-function onload(Cesium) {
-    audio.pause();
-=======
 
 function onload(Cesium) {
->>>>>>> origin/master
+    audio.pause();
     var toolbar = document.getElementById('toolbar');
     var viewer = new Cesium.Viewer('cesiumContainer');
     //添加地形
-    var terrainProvider = new Cesium.CesiumTerrainProvider({
-        url: 'https://www.supermapol.com/realspace/services/3D-stk_terrain/rest/realspace/datas/info/data/path',
-        // requestVertexNormals: true,
-        requestWaterMask: true
-    });
-    viewer.terrainProvider = terrainProvider;
-    viewer.scene.globe.enableLighting = true;
+    /* var terrainProvider = new Cesium.CesiumTerrainProvider({
+         url: 'https://www.supermapol.com/realspace/services/3D-stk_terrain/rest/realspace/datas/info/data/path',
+         // requestVertexNormals:?true,
+         requestWaterMask: true
+     });
+     viewer.terrainProvider = terrainProvider;
+     viewer.scene.globe.enableLighting = true;*/
     //去掉logo
     viewer._cesiumWidget._creditContainer.style.display = "none";
     //加载底图
@@ -39,79 +35,64 @@ function onload(Cesium) {
                 roll: 0
             }
         });
-//牡丹岭
-        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/mudanling.kml', {
-            camera: viewer.scene.camera,
-            canvas: viewer.scene.canvas,
-            clampToS3M : true//设置贴对象(s3m)
-        })).then(function(dataSources)
-        {
-            my_function_1(dataSources);
-        });
-
-        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/dunhuashi.kml', {
-            camera: viewer.scene.camera,
-            canvas: viewer.scene.canvas,
-            clampToS3M : true//设置贴对象(s3m)
-        })).then(function (dataSources) {
-            my_function_4(dataSources)
-        })
-
-        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/jingpohu.kml', {
-            camera: viewer.scene.camera,
-            canvas: viewer.scene.canvas,
-            clampToS3M : true//设置贴对象(s3m)
-        }))
-
-
-        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/laochang.kml', {
-            camera: viewer.scene.camera,
-            canvas: viewer.scene.canvas,
-            clampToS3M : true//设置贴对象(s3m)
-        }))
-
-        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/mudanjiang.kml', {
-            camera: viewer.scene.camera,
-            canvas: viewer.scene.canvas,
-            clampToS3M : true//设置贴对象(s3m)
-        }))
-
-        var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/lianhua.kml', {
-            camera: viewer.scene.camera,
-            canvas: viewer.scene.canvas,
-            clampToS3M : true//设置贴对象(s3m)
-        }))
-        viewer.dataSources.add(Cesium.KmlDataSource.load('../js/newhbh.kml', {
-            camera: viewer.scene.camera,
-            canvas: viewer.scene.canvas,
-           // clampToS3M: true//设置贴对象(s3m)
-        })).then(function (dataSource) {
-            entity_collection = dataSource.entities;
-            my_entity_array = entity_collection.values;
-            for (var i = 0; i < my_entity_array.length; i++) {
-                if (Cesium.defined(my_entity_array[i].billboard)) {
-                    my_entity_array[i].billboard.width = 150;
-                    my_entity_array[i].billboard.height = 50;
-
-                    my_entity_array[i].billboard.distanceDisplayCondition = new Cesium.DistanceDisplayCondition(1.0, 4800000000.0);
-                    my_entity_array[i].billboard.verticalOrigin = Cesium.VerticalOrigin.BOTTOM;// 调整垂直方向的原点，保证图标里的针尖对着地表位置
-                }
-            }
-        });
-        // viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly.kml', {
-        //     camera: viewer.scene.camera,
-        //     canvas: viewer.scene.canvas,
-        //     clampToS3M: true//设置贴对象(s3m)
-        // }));
 
 
         //添加全流域线-----------------------------------------------------------------------------------
         function addqly() {
-            da = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly.kml', {
+            //牡丹岭
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/mudanling.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            }));
+            })).then(function (dataSources) {
+                my_function_1(dataSources);
+            });
+
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/dunhuashi.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            })).then(function (dataSources) {
+                my_function_2(dataSources)
+            })
+
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/jingpohu.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            })).then(function (dataSources) {
+                my_function_3(dataSources)
+            })
+
+
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/laochang.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            })).then(function (dataSources) {
+                my_function_4(dataSources)
+            })
+
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/mudanjiang.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            })).then(function (dataSources) {
+                my_function_5(dataSources)
+            })
+
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/lianhua.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            })).then(function (dataSources) {
+                my_function_6(dataSources)
+            })
+         /*   viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly.kml', {
+                camera: viewer.scene.camera,
+                canvas: viewer.scene.canvas,
+                clampToS3M: true//设置贴对象(s3m)
+            }));*/
             viewer.dataSources.add(Cesium.KmlDataSource.load('../js/newhbh.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
@@ -165,18 +146,12 @@ function onload(Cesium) {
 
         //音乐播放与飞行开始--------------------------------------------------------------------------------------------------------
         function bofang() {
-            if (audio.paused) { //判读是否播放  
+            if (audio.paused) { //判读是否播放??
                 audio.paused = false;
-                audio.play(); //没有就播放 
-                flyManager.play();
+                audio.play(); //没有就播放?
             }
         }
 
-        //相机飞行
-        viewer.camera.flyTo({
-            destination: Cesium.Cartesian3.fromDegrees(128.62950188064577, 44.32807880491015, 435000), // 设置位置
-            }
-        }
         //全流域飞行
         function flys() {
             clearInterval(xunhua);
@@ -196,11 +171,10 @@ function onload(Cesium) {
             //flyOverLongitude: 100, // 如果到达目的地有2种方式，设置具体值后会强制选择方向飞过这个经度
             // 到达位置后执行的回调函数
             complete: function () {
-               // setTimeout(bofang, 10000);
                 bofang();
                 addqly();
                 bs();
-                setTimeout(flys, 10000);
+                //setTimeout(flys, 10000);
             }
         });
 
@@ -268,76 +242,82 @@ function onload(Cesium) {
                 setTimeout(function () {
                     location.reload()
                 }, 1000);
-            };
+            }
+            ;
             //显示实体
             //添加敦化市
-            if (routeStop.index==9) {
+            if (routeStop.index == 9) {
                 viewer.entities.add({
-                    position : Cesium.Cartesian3.fromDegrees(128.240069243566,43.36069446521731),
-                    billboard :{
-                        id:'dhs',
-                        image : '../images/dhs2.png'
+                    position: Cesium.Cartesian3.fromDegrees(128.240069243566, 43.36069446521731),
+                    billboard: {
+                        id: 'dhs',
+                        image: '../images/dhs2.png'
                     }
                 });
-            };
+            }
+            ;
             //添加黑石水库
-            if (routeStop.index==16) {
+            if (routeStop.index == 16) {
                 viewer.entities.add({
-                    position : Cesium.Cartesian3.fromDegrees(128.1980810188602,43.62255476688145),
-                    billboard :{
-                        image : '../images/hssk2.png'
+                    position: Cesium.Cartesian3.fromDegrees(128.1980810188602, 43.62255476688145),
+                    billboard: {
+                        image: '../images/hssk2.png'
                     }
                 });
-            };
+            }
+            ;
             //添加镜泊湖水库
-            if (routeStop.index==30) {
+            if (routeStop.index == 30) {
                 viewer.entities.add({
-                    position : Cesium.Cartesian3.fromDegrees(128.8530677190901,43.82758954102775),
-                    billboard :{
-                        image : '../images/jbhsk2.png'
+                    position: Cesium.Cartesian3.fromDegrees(128.8530677190901, 43.82758954102775),
+                    billboard: {
+                        image: '../images/jbhsk2.png'
                     }
                 });
-            };
+            }
+            ;
             //添加老厂
-            if (routeStop.index==39) {
+            if (routeStop.index == 39) {
                 viewer.entities.add({
-                    position : Cesium.Cartesian3.fromDegrees(128.9529959316699,44.03916403563529),
-                    billboard :{
-                        image : '../images/lc2.png'
+                    position: Cesium.Cartesian3.fromDegrees(128.9529959316699, 44.03916403563529),
+                    billboard: {
+                        image: '../images/lc2.png'
                     }
                 });
-            };
+            }
+            ;
             //添加宁安市
-            if (routeStop.index==48) {
+            if (routeStop.index == 48) {
                 viewer.entities.add({
-                    position : Cesium.Cartesian3.fromDegrees(129.4945007214383,44.34002664299258),
-                    billboard :{
-                        image : '../images/nas2.png'
+                    position: Cesium.Cartesian3.fromDegrees(129.4945007214383, 44.34002664299258),
+                    billboard: {
+                        image: '../images/nas2.png'
                     }
                 });
-            };
+            }
+            ;
             //添加牡丹江市
-            if (routeStop.index==50) {
+            if (routeStop.index == 50) {
                 viewer.entities.add({
-                    position : Cesium.Cartesian3.fromDegrees(129.6116084240439,44.56861057536652),
-                    billboard :{
-                        image : '../images/mdjs2.png'
+                    position: Cesium.Cartesian3.fromDegrees(129.6116084240439, 44.56861057536652),
+                    billboard: {
+                        image: '../images/mdjs2.png'
                     }
                 });
-            };
+            }
+            ;
             //添加莲花水电厂
-            if (routeStop.index==61) {
+            if (routeStop.index == 61) {
                 viewer.entities.add({
-                    position : Cesium.Cartesian3.fromDegrees(129.7971687066846,45.42213927363305,300),
-                    billboard :{
-                        image : '../images/lhsdc2.png'
+                    position: Cesium.Cartesian3.fromDegrees(129.7971687066846, 45.42213927363305, 300),
+                    billboard: {
+                        image: '../images/lhsdc2.png'
                     }
                 });
             };
         });
     });
 }
-
 function my_function_1(data)
 {
     var xx = setInterval(function(){
@@ -346,7 +326,36 @@ function my_function_1(data)
     //clearInterval(xx);
 }
 
+function my_function_2(data)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    //clearInterval(xx);
+}
+function my_function_3(data)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    //clearInterval(xx);
+}
 function my_function_4(data)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100);}, 500);
+    //clearInterval(xx);
+}
+
+function my_function_5(data)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    //clearInterval(xx);
+}
+function my_function_6(data)
 {
     var xx = setInterval(function(){
         setTimeout(function(){data.show = false;}, 1000);
