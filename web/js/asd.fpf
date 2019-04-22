@@ -63,32 +63,6 @@
 </routestop>
 <routestop name="Stop3" speed="2000" excluded="False" viewType="camera">
 <camera>
-<longitude>128.0172879864286</longitude>
-<latitude>43.17847604886833</latitude>
-<altitude>5000</altitude>
-<heading>60</heading>
-<tilt>60</tilt>
-<altitudeMode>Absolute</altitudeMode>
-</camera>
-<style>
-<geostyle3d>
-<icon/>
-<markersize>4.8</markersize>
-<markericonscale>1</markericonscale>
-<markercolor>RGBA(255,255,255,255)</markercolor>
-</geostyle3d>
-</style>
-<setting>
-<turnTime>1.5</turnTime>
-<turnSlowly>False</turnSlowly>
-<stopPlayMode>StopPause</stopPlayMode>
-<autoPlay>False</autoPlay>
-<pauseTime>0</pauseTime>
-<angularSpeed>1</angularSpeed>
-</setting>
-</routestop>
-<routestop name="Stop4" speed="2000" excluded="False" viewType="camera">
-<camera>
 <longitude> 128.2336538916811</longitude>
 <latitude>43.35219905114953</latitude>
 <altitude>5000</altitude>
@@ -113,10 +87,10 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
-<routestop name="Stop5" speed="2000" excluded="False" viewType="camera">
+<routestop name="Stop4" speed="2000" excluded="False" viewType="camera">
 <camera>
-<longitude>128.2664676686757</longitude>
-<latitude>43.56001030946624</latitude>
+<longitude>128.29915523529056</longitude>
+<latitude>43.42545044731356</latitude>
 <altitude>5000</altitude>
 <heading>10</heading>
 <tilt>60</tilt>
@@ -139,10 +113,10 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
-<routestop name="Stop6" speed="2000" excluded="False" viewType="camera">
+<routestop name="Stop5" speed="2000" excluded="False" viewType="camera">
 <camera>
-<longitude>128.3164934849409</longitude>
-<latitude>43.59642415728895</latitude>
+<longitude>128.31885337829593</longitude>
+<latitude>43.477895311255764</latitude>
 <altitude>5000</altitude>
 <heading>60</heading>
 <tilt>60</tilt>
@@ -165,13 +139,38 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
-
-<routestop name="Stop7" speed="200" excluded="False" viewType="camera">
+<routestop name="Stop6" speed="1500" excluded="False" viewType="camera">
 <camera>
-<longitude>128.8259127794194</longitude>
-<latitude>43.76223452987713</latitude>
-<altitude>1000</altitude>
-<heading>20</heading>
+<longitude>128.3164934849409</longitude>
+<latitude>43.59642415728895</latitude>
+<altitude>5000</altitude>
+<heading>70</heading>
+<tilt>60</tilt>
+<altitudeMode>Absolute</altitudeMode>
+</camera>
+<style>
+<geostyle3d>
+<icon/>
+<markersize>4.8</markersize>
+<markericonscale>1</markericonscale>
+<markercolor>RGBA(255,255,255,255)</markercolor>
+</geostyle3d>
+</style>
+<setting>
+<turnTime>1.5</turnTime>
+<turnSlowly>False</turnSlowly>
+<stopPlayMode>StopPause</stopPlayMode>
+<autoPlay>False</autoPlay>
+<pauseTime>0</pauseTime>
+<angularSpeed>1</angularSpeed>
+</setting>
+</routestop>
+<routestop name="Stop7" speed="2200" excluded="False" viewType="camera">
+<camera>
+<longitude>128.6079175957085</longitude>
+<latitude>43.68238652186464</latitude>
+<altitude>3000</altitude>
+<heading>60</heading>
 <tilt>70</tilt>
 <altitudeMode>Absolute</altitudeMode>
 </camera>
@@ -193,6 +192,32 @@
 </setting>
 </routestop>
 <routestop name="Stop8" speed="200" excluded="False" viewType="camera">
+<camera>
+<longitude>128.8259127794194</longitude>
+<latitude>43.76223452987713</latitude>
+<altitude>5000</altitude>
+<heading>20</heading>
+<tilt>70</tilt>
+<altitudeMode>Absolute</altitudeMode>
+</camera>
+<style>
+<geostyle3d>
+<icon/>
+<markersize>4.8</markersize>
+<markericonscale>1</markericonscale>
+<markercolor>RGBA(255,255,255,255)</markercolor>
+</geostyle3d>
+</style>
+<setting>
+<turnTime>1.5</turnTime>
+<turnSlowly>False</turnSlowly>
+<stopPlayMode>StopPause</stopPlayMode>
+<autoPlay>False</autoPlay>
+<pauseTime>0</pauseTime>
+<angularSpeed>1</angularSpeed>
+</setting>
+</routestop>
+<routestop name="Stop9" speed="200" excluded="False" viewType="camera">
 <camera>
 <longitude>128.9391536687762</longitude>
 <latitude>43.8357231272737</latitude>
@@ -218,7 +243,7 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
-<routestop name="Stop9" speed="200" excluded="False" viewType="camera">
+<routestop name="Stop10" speed="200" excluded="False" viewType="camera">
 <camera>
 <longitude>128.8929493275745</longitude>
 <latitude>43.87859178824669</latitude>
@@ -244,6 +269,5 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
-
 </route>
 </SceneRoute>
