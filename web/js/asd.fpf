@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SceneRoute xmlns="http://www.supermap.com.cn/ugc60">
-<route name="飞行路线_1" speed="35.044927777778" lineType="0" showroutestop="True" showrouteline="True" altitudefree="False" headingfree="False" tiltfree="False" flycircle="False" alongline="False">
+<route name="飞行路线_1" speed="50000" lineType="0" showroutestop="True" showrouteline="True" altitudefree="False" headingfree="False" tiltfree="False" flycircle="False" alongline="False">
 <style>
 <geostyle3d>
 <linecolor>RGBA(147,112,219,255)</linecolor>
@@ -9,13 +9,13 @@
 <bottomAltitude>0.00</bottomAltitude>
 </geostyle3d>
 </style>
-<routestop name="Stop1" speed="0" excluded="False" viewType="camera">
+<routestop name="Stop1" speed="40000" excluded="False" viewType="camera">
 <camera>
-<longitude>129.79249696709181</longitude>
-<latitude>45.420274312672916</latitude>
-<altitude>386.0500308573246</altitude>
-<heading>6.1468528624348124</heading>
-<tilt>75.26874220111138</tilt>
+<longitude>129.38840188064577</longitude>
+<latitude>42.70417880491015</latitude>
+<altitude>150000</altitude>
+<heading>-25</heading>
+<tilt>45</tilt>
 <altitudeMode>Absolute</altitudeMode>
 </camera>
 <style>
@@ -35,13 +35,13 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
-<routestop name="Stop3" speed="0" excluded="False" viewType="camera">
+<routestop name="Stop2" speed="2000" excluded="False" viewType="camera">
 <camera>
-<longitude>129.79449776641906</longitude>
-<latitude>45.424050037867836</latitude>
-<altitude>246.61683189217001</altitude>
-<heading>300.45086538918662</heading>
-<tilt>64.641075643264813</tilt>
+<longitude>128.1430480968759</longitude>
+<latitude>43.12059216369557</latitude>
+<altitude>10000</altitude>
+<heading>-40</heading>
+<tilt>45</tilt>
 <altitudeMode>Absolute</altitudeMode>
 </camera>
 <style>
@@ -61,13 +61,13 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
-<routestop name="Stop4" speed="0" excluded="False" viewType="camera">
+<routestop name="Stop3" speed="2000" excluded="False" viewType="camera">
 <camera>
-<longitude>129.79023919563929</longitude>
-<latitude>45.424772192597004</latitude>
-<altitude>204.7234277445823</altitude>
-<heading>242.76241995890365</heading>
-<tilt>76.101056767860811</tilt>
+<longitude>128.0172879864286</longitude>
+<latitude>43.17847604886833</latitude>
+<altitude>5000</altitude>
+<heading>60</heading>
+<tilt>60</tilt>
 <altitudeMode>Absolute</altitudeMode>
 </camera>
 <style>
@@ -87,13 +87,13 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
-<routestop name="Stop2" speed="0" excluded="False" viewType="camera">
+<routestop name="Stop4" speed="2000" excluded="False" viewType="camera">
 <camera>
-<longitude>129.79339862033984</longitude>
-<latitude>45.424067111794763</latitude>
-<altitude>286.25248351600021</altitude>
-<heading>6.1474951247317673</heading>
-<tilt>75.271599322229179</tilt>
+<longitude> 128.2336538916811</longitude>
+<latitude>43.35219905114953</latitude>
+<altitude>5000</altitude>
+<heading>10</heading>
+<tilt>60</tilt>
 <altitudeMode>Absolute</altitudeMode>
 </camera>
 <style>
@@ -113,5 +113,137 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
+<routestop name="Stop5" speed="2000" excluded="False" viewType="camera">
+<camera>
+<longitude>128.2664676686757</longitude>
+<latitude>43.56001030946624</latitude>
+<altitude>5000</altitude>
+<heading>10</heading>
+<tilt>60</tilt>
+<altitudeMode>Absolute</altitudeMode>
+</camera>
+<style>
+<geostyle3d>
+<icon/>
+<markersize>4.8</markersize>
+<markericonscale>1</markericonscale>
+<markercolor>RGBA(255,255,255,255)</markercolor>
+</geostyle3d>
+</style>
+<setting>
+<turnTime>1.5</turnTime>
+<turnSlowly>False</turnSlowly>
+<stopPlayMode>StopPause</stopPlayMode>
+<autoPlay>False</autoPlay>
+<pauseTime>0</pauseTime>
+<angularSpeed>1</angularSpeed>
+</setting>
+</routestop>
+<routestop name="Stop6" speed="2000" excluded="False" viewType="camera">
+<camera>
+<longitude>128.3164934849409</longitude>
+<latitude>43.59642415728895</latitude>
+<altitude>5000</altitude>
+<heading>60</heading>
+<tilt>60</tilt>
+<altitudeMode>Absolute</altitudeMode>
+</camera>
+<style>
+<geostyle3d>
+<icon/>
+<markersize>4.8</markersize>
+<markericonscale>1</markericonscale>
+<markercolor>RGBA(255,255,255,255)</markercolor>
+</geostyle3d>
+</style>
+<setting>
+<turnTime>1.5</turnTime>
+<turnSlowly>False</turnSlowly>
+<stopPlayMode>StopPause</stopPlayMode>
+<autoPlay>False</autoPlay>
+<pauseTime>0</pauseTime>
+<angularSpeed>1</angularSpeed>
+</setting>
+</routestop>
+
+<routestop name="Stop7" speed="200" excluded="False" viewType="camera">
+<camera>
+<longitude>128.8259127794194</longitude>
+<latitude>43.76223452987713</latitude>
+<altitude>1000</altitude>
+<heading>20</heading>
+<tilt>70</tilt>
+<altitudeMode>Absolute</altitudeMode>
+</camera>
+<style>
+<geostyle3d>
+<icon/>
+<markersize>4.8</markersize>
+<markericonscale>1</markericonscale>
+<markercolor>RGBA(255,255,255,255)</markercolor>
+</geostyle3d>
+</style>
+<setting>
+<turnTime>1.5</turnTime>
+<turnSlowly>False</turnSlowly>
+<stopPlayMode>StopPause</stopPlayMode>
+<autoPlay>False</autoPlay>
+<pauseTime>0</pauseTime>
+<angularSpeed>1</angularSpeed>
+</setting>
+</routestop>
+<routestop name="Stop8" speed="200" excluded="False" viewType="camera">
+<camera>
+<longitude>128.9391536687762</longitude>
+<latitude>43.8357231272737</latitude>
+<altitude>1000</altitude>
+<heading>-80</heading>
+<tilt>80</tilt>
+<altitudeMode>Absolute</altitudeMode>
+</camera>
+<style>
+<geostyle3d>
+<icon/>
+<markersize>4.8</markersize>
+<markericonscale>1</markericonscale>
+<markercolor>RGBA(255,255,255,255)</markercolor>
+</geostyle3d>
+</style>
+<setting>
+<turnTime>1.5</turnTime>
+<turnSlowly>False</turnSlowly>
+<stopPlayMode>StopPause</stopPlayMode>
+<autoPlay>False</autoPlay>
+<pauseTime>0</pauseTime>
+<angularSpeed>1</angularSpeed>
+</setting>
+</routestop>
+<routestop name="Stop9" speed="200" excluded="False" viewType="camera">
+<camera>
+<longitude>128.8929493275745</longitude>
+<latitude>43.87859178824669</latitude>
+<altitude>1000</altitude>
+<heading>-160</heading>
+<tilt>80</tilt>
+<altitudeMode>Absolute</altitudeMode>
+</camera>
+<style>
+<geostyle3d>
+<icon/>
+<markersize>4.8</markersize>
+<markericonscale>1</markericonscale>
+<markercolor>RGBA(255,255,255,255)</markercolor>
+</geostyle3d>
+</style>
+<setting>
+<turnTime>1.5</turnTime>
+<turnSlowly>False</turnSlowly>
+<stopPlayMode>StopPause</stopPlayMode>
+<autoPlay>False</autoPlay>
+<pauseTime>0</pauseTime>
+<angularSpeed>1</angularSpeed>
+</setting>
+</routestop>
+
 </route>
 </SceneRoute>

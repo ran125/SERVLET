@@ -52,35 +52,35 @@ function onload(Cesium) {
                 handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
                 // 鼠标双击打开右侧菜单
                 handler.setInputAction(function (click) {
-                    var pick = viewer.scene.pick(click.position);
-                    if (pick && pick.id) {
-                        var jingwei = my_entity_array[pick.id.id].kml.extendedData.my_fileds.value;
-                        //寻找第一个逗号
-                        var douhao = jingwei.indexOf(",");
-                        //寻找最后一个逗号
-                        var douhao2 = jingwei.lastIndexOf(",");
-                        //截取经度数值
-                        var j1 = jingwei.substring(0, douhao);
-                        var j=parseFloat(j1);
-                        //截取纬度
-                        var w1 = jingwei.substring(douhao + 1, douhao2);
-                        var w=parseFloat(w1);
-                        //右侧窗体相机视角
-                        viewer2.camera.setView({
-                            destination: new Cesium.Cartesian3.fromDegrees(j, w, 1000),
-                            orientation: {
-                                heading: 30.255714027185674,
-                                pitch: -20,
-                                roll: 6.283090080629748
-                            }
-                        });
+                      var pick = viewer.scene.pick(click.position);
+                     if (pick && pick.id) {
+                          var jingwei = my_entity_array[pick.id.id].kml.extendedData.my_fileds.value;
+                          //寻找第一个逗号
+                          var douhao = jingwei.indexOf(",");
+                          //寻找最后一个逗号
+                          var douhao2 = jingwei.lastIndexOf(",");
+                          //截取经度数值
+                          var j1 = jingwei.substring(0, douhao);
+                          var j=parseFloat(j1);
+                          //截取纬度
+                          var w1 = jingwei.substring(douhao + 1, douhao2);
+                          var w=parseFloat(w1);
+                          //右侧窗体相机视角
+                          viewer2.camera.setView({
+                              destination: new Cesium.Cartesian3.fromDegrees(j, w, 1000),
+                              orientation: {
+                                  heading: 30.255714027185674,
+                                  pitch: -20,
+                                  roll: 6.283090080629748
+                              }
+                          });
                         var p = $("#cc").layout("panel", "east")[0].clientWidth;
                         if (p > 0) {
                             return;
                         } else {
                             $('#cc').layout('expand', 'east');
                         }
-                    }
+                   }
                 }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
             }
         }

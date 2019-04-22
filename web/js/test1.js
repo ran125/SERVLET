@@ -1,17 +1,18 @@
 var flyManager;
 var audio = document.getElementById("aa");
+
 function onload(Cesium) {
     audio.play();
     var toolbar = document.getElementById('toolbar');
     var viewer = new Cesium.Viewer('cesiumContainer');
     //添加地形
-/*     var terrainProvider = new Cesium.CesiumTerrainProvider({
-         url: 'https://www.supermapol.com/realspace/services/3D-stk_terrain/rest/realspace/datas/info/data/path',
-         // requestVertexNormals:?true,
-         requestWaterMask: true
-     });
-     viewer.terrainProvider = terrainProvider;
-     viewer.scene.globe.enableLighting = true;*/
+         var terrainProvider = new Cesium.CesiumTerrainProvider({
+             url: 'https://www.supermapol.com/realspace/services/3D-stk_terrain/rest/realspace/datas/info/data/path',
+             // requestVertexNormals:?true,
+             requestWaterMask: true
+         });
+         viewer.terrainProvider = terrainProvider;
+         viewer.scene.globe.enableLighting = true;
     //去掉logo
     viewer._cesiumWidget._creditContainer.style.display = "none";
     //加载底图
@@ -43,10 +44,13 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=7000;
-                dataSources.show=false;
-                setTimeout(function(){my_function_1(dataSources,time)}, 2000);
+            })).then(function (dataSources, time) {
+                time = 7000;
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_1(dataSources, time)
+                }, 1000);
+                everyLine(dataSources);
 
             });
             //江源镇到敦化市
@@ -54,20 +58,24 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=6000;
-                dataSources.show=false;
-                setTimeout(function(){my_function_2(dataSources,time)}, 3000);
+            })).then(function (dataSources, time) {
+                time = 6000;
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_2(dataSources, time)
+                }, 2000);
             })
             //敦化市到上沟水库
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/dunhuashi.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=5000
-                dataSources.show=false;
-                setTimeout(function(){my_function_3(dataSources,time)}, 4000);
+            })).then(function (dataSources, time) {
+                time = 5000
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_3(dataSources, time)
+                }, 3000);
             })
 
             //上沟水库到西崴子水库
@@ -75,10 +83,12 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=4000
-                dataSources.show=false;
-                setTimeout(function(){my_function_4(dataSources,time)}, 5000);
+            })).then(function (dataSources, time) {
+                time = 4000
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_4(dataSources, time)
+                }, 4000);
 
             })
             //西崴子水库到黑市水库
@@ -86,21 +96,25 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=3000
-                dataSources.show=false;
-                setTimeout(function(){my_function_5(dataSources,time)}, 6000);
+            })).then(function (dataSources, time) {
+                time = 3000
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_5(dataSources, time)
+                }, 5000);
 
             })
-        //黑石水库到雁鸣湖
+            //黑石水库到雁鸣湖
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/heishishuiku.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=2000
-                dataSources.show=false;
-                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
+            })).then(function (dataSources, time) {
+                time = 2000
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_6(dataSources, time)
+                }, 6000);
 
             })
 
@@ -110,24 +124,26 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=2000
-                dataSources.show=false;
-                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
+            })).then(function (dataSources, time) {
+                time = 2000
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_7(dataSources, time)
+                }, 7000);
 
             })
 
-
             //镜泊湖到宁安市
-            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly1/jingpohu.kml', {
+            var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/jingpohu.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=2000
-                dataSources.show=false;
-                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
-
+            })).then(function (dataSources, time) {
+                time = 2000
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_8(dataSources, time)
+                }, 8000);
             })
 
             //宁安市到牡丹江
@@ -135,10 +151,12 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=2000
-                dataSources.show=false;
-                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
+            })).then(function (dataSources, time) {
+                time = 2000
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_9(dataSources, time)
+                },9000);
 
             })
             //牡丹江到莲花水电厂
@@ -146,10 +164,12 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=2000
-                dataSources.show=false;
-                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
+            })).then(function (dataSources, time) {
+                time = 2000
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_10(dataSources, time)
+                }, 10000);
 
             })
             //莲花水电厂到乌斯浑河
@@ -157,17 +177,19 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources,time) {
-                time=2000
-                dataSources.show=false;
-                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
+            })).then(function (dataSources, time) {
+                time = 2000
+                dataSources.show = false;
+                setTimeout(function () {
+                    my_function_11(dataSources, time)
+                }, 11000);
             })
             // my_datasource_1.dataSource.show=false
-         /*   viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly.kml', {
-                camera: viewer.scene.camera,
-                canvas: viewer.scene.canvas,
-                clampToS3M: true//设置贴对象(s3m)
-            }));*/
+            /*   viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly.kml', {
+                   camera: viewer.scene.camera,
+                   canvas: viewer.scene.canvas,
+                   clampToS3M: true//设置贴对象(s3m)
+               }));*/
             viewer.dataSources.add(Cesium.KmlDataSource.load('../js/newhbh.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
@@ -193,14 +215,25 @@ function onload(Cesium) {
                 }
             });
         }
-
+//地标变色
         function bs() {
             var i = 1;
             xunhua = setInterval(scoreCounter, 1000);
+
             function scoreCounter() {
                 if (i < 16) {
                     my_entity_array[i].billboard.color = Cesium.Color.YELLOW
                     i++;
+                }
+            }
+        }
+        //全流域的线
+        function everyLine(dataSource) {
+            entity_collection = dataSource.entities;
+            my_entity_array = entity_collection.values;
+            for (var i = 0; i < my_entity_array.length; i++) {
+                if (Cesium.defined(my_entity_array[i].billboard)) {
+                    my_entity_array[i].billboard.distanceDisplayCondition = new Cesium.DistanceDisplayCondition(10000, 4800000.0);
                 }
             }
         }
@@ -220,43 +253,43 @@ function onload(Cesium) {
               }*/
 
         //音乐播放与飞行开始--------------------------------------------------------------------------------------------------------
-   /*     function bofang() {
-            if (audio.paused) { //判读是否播放??
-                audio.paused = false;
-                audio.play(); //没有就播放?
-            }
-        }*/
+        /*     function bofang() {
+                 if (audio.paused) { //判读是否播放??
+                     audio.paused = false;
+                     audio.play(); //没有就播放?
+                 }
+             }*/
 
         //全流域飞行
         function flys() {
             clearInterval(xunhua);
-            viewer.dataSources.remove(viewer.dataSources.get(0));
-            viewer.dataSources.remove(viewer.dataSources.get(1));
+            /* viewer.dataSources.remove(viewer.dataSources.get(0));
+             viewer.dataSources.remove(viewer.dataSources.get(1));*/
             //viewer.entities.removeAll();
-            scene.globe.depthTestAgainstTerrain = false;
+            //scene.globe.depthTestAgainstTerrain = false;
             flyManager.play();
         }
 
         //相机飞行
         viewer.camera.flyTo({
             destination: Cesium.Cartesian3.fromDegrees(128.62950188064577, 44.32807880491015, 14300), // 设置位置
-            duration: 11, // 设置飞行持续时间，默认会根据距离来计算
+            duration: 9, // 设置飞行持续时间，默认会根据距离来计算
             pitchAdjustHeight: -90, // 如果摄像机飞越高于该值，则调整俯仰俯仰的俯仰角度，并将地球保持在视口中。
             //maximumHeight:5000, // 相机最大飞行高度
             //flyOverLongitude: 100, // 如果到达目的地有2种方式，设置具体值后会强制选择方向飞过这个经度
             // 到达位置后执行的回调函数
             complete: function () {
-               /* bofang();*/
+                /* bofang();*/
                 addqly();
                 bs();
-                //setTimeout(flys, 10000);
+                setTimeout(flys, 14000);
             }
         });
 
         //创建飞行路线集合对象。（个人感觉参数的作用只是为了展示实体）
         var routes = new Cesium.RouteCollection(viewer.entities);
         //添加fpf飞行文件，fpf由SuperMap iDesktop生成
-        routes.fromFile('../js/lh.fpf');
+        routes.fromFile('../js/asd.fpf');
         //初始化飞行管理
         var flyManager = new Cesium.FlyManager({
             /*场景对象*/
@@ -271,8 +304,8 @@ function onload(Cesium) {
         });
         flyManager.readyPromise.then(function () { // 飞行路线就绪
             var currentRoute = flyManager.currentRoute;
-            currentRoute.isLineVisible = false;
-            currentRoute.isStopVisible = false;
+            currentRoute.isLineVisible = true;
+            currentRoute.isStopVisible = true;
             //生成飞行文件中的所有站点列表
             var allStops = flyManager.getAllRouteStops();
             var menu = document.getElementById('stopList');
@@ -389,58 +422,167 @@ function onload(Cesium) {
                         image: '../images/lhsdc2.png'
                     }
                 });
-            };
+            }
+            ;
         });
     });
 }
-function my_function_1(data,time)
-{
-    var xx = setInterval(function(){
-        setTimeout(function(){data.show = false;}, 1000);
-        setTimeout(function(){data.show = true;}, 100);}, 500);
-    setTimeout(function(){clearInterval(xx);}, time);
+
+function my_function_1(data, time) {
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 500);
+/*    setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
 
 }
 
-function my_function_2(data,time)
-{
+function my_function_2(data, time) {
 
-    var xx = setInterval(function(){
-        setTimeout(function(){data.show = false;}, 1000);
-        setTimeout(function(){data.show = true;}, 100); }, 498);
-        setTimeout(function(){clearInterval(xx);}, time);
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 498);
+ /*   setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
 
 }
 
 
-function my_function_3(data,time)
-{
-    var xx = setInterval(function(){
-        setTimeout(function(){data.show = false;}, 1000);
-        setTimeout(function(){data.show = true;}, 100); }, 498);
-    setTimeout(function(){clearInterval(xx);}, time);
-}
-function my_function_4(data,time)
-{
-    var xx = setInterval(function(){
-        setTimeout(function(){data.show = false;}, 1000);
-        setTimeout(function(){data.show = true;}, 100);}, 500);
-    setTimeout(function(){clearInterval(xx);}, time);
-}
-
-function my_function_5(data,time)
-{
-    var xx = setInterval(function(){
-        setTimeout(function(){data.show = false;}, 1000);
-        setTimeout(function(){data.show = true;}, 100); }, 498);
-    setTimeout(function(){clearInterval(xx);}, time);
-}
-function my_function_6(data,time)
-{
-    var xx = setInterval(function(){
-        setTimeout(function(){data.show = false;}, 1000);
-        setTimeout(function(){data.show = true;}, 100); }, 498);
-    setTimeout(function(){clearInterval(xx);}, time);
+function my_function_3(data, time) {
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 498);
+/*    setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
 }
 
+function my_function_4(data, time) {
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 500);
+ /*   setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
+}
 
+function my_function_5(data, time) {
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 498);
+  /*  setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
+}
+
+function my_function_6(data, time) {
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 498);
+  /*  setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
+}
+
+
+function my_function_7(data, time) {
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 498);
+ /*   setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
+}
+
+function my_function_8(data, time) {
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 498);
+/*    setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
+}
+
+function my_function_9(data, time) {
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 498);
+ /*   setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
+}
+
+function my_function_10(data, time) {
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 498);
+/*    setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
+}
+
+function my_function_11(data, time) {
+    var xx = setInterval(function () {
+        setTimeout(function () {
+            data.show = false;
+        }, 1000);
+        setTimeout(function () {
+            data.show = true;
+        }, 100);
+    }, 498);
+   /* setTimeout(function () {
+        clearInterval(xx);
+    }, time);*/
+}
