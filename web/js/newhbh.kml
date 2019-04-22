@@ -373,20 +373,6 @@
 			</Point>
 		</Placemark>
 		<Placemark id="3">
-			<styleUrl>#failed170</styleUrl>
-			<ExtendedData>
-				<Data name="content">
-				</Data>
-				<Data name="my_fileds">
-					<value>128.1556034088135,43.298221311426495,200</value>
-				</Data>
-			</ExtendedData>
-			<Point>
-				<altitudeMode>absolute</altitudeMode>
-				<coordinates>128.1556034088135,43.2982213114265,800.0000000000001</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark id="4">
 			<styleUrl>#failed21</styleUrl>
 			<ExtendedData>
 				<Data name="content">
@@ -400,20 +386,34 @@
 				<coordinates>128.2462137937546,43.35778631573646,800.0000000000001</coordinates>
 			</Point>
 		</Placemark>
-		<Placemark id="5">
+		<Placemark id="4">
 			<styleUrl>#failed1703</styleUrl>
 			<ExtendedData>
 				<Data name="content">
 				</Data>
 				<Data name="my_fileds">
-					<value>128.31885337829593,43.477895311255764,200</value>
+					<value>128.29915523529056,43.42545044731356,200</value>
 				</Data>
 			</ExtendedData>
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
-				<coordinates>128.3188533782959,43.47789531125576,800.0000000000001</coordinates>
+				<coordinates>128.29915523529056,43.42545044731356,800.0000000000001</coordinates>
 			</Point>
 		</Placemark>
+			<Placemark id="5">
+        			<styleUrl>#failed170</styleUrl>
+        			<ExtendedData>
+        				<Data name="content">
+        				</Data>
+        				<Data name="my_fileds">
+        					<value>128.31885337829593,43.477895311255764,200</value>
+        				</Data>
+        			</ExtendedData>
+        			<Point>
+        				<altitudeMode>absolute</altitudeMode>
+        				<coordinates>128.31885337829593,43.477895311255764,800.0000000000001</coordinates>
+        			</Point>
+        		</Placemark>
 		<Placemark id="6">
 			<styleUrl>#failed1704</styleUrl>
 			<ExtendedData>
@@ -476,12 +476,12 @@
 				<Data name="content">
 				</Data>
 				<Data name="my_fileds">
-					<value>128.9352060988077,44.04489470257117,200</value>
+					<value>128.9553257130194,44.04092443575978,200</value>
 				</Data>
 			</ExtendedData>
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
-				<coordinates>128.9352060988077,44.04489470257117,800.0000000000001</coordinates>
+				<coordinates>128.9553257130194,44.04092443575978,400.0000000000001</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark id="11">
@@ -494,7 +494,7 @@
 				</Data>
 			</ExtendedData>
 			<Point>
-				<coordinates>129.4861614704132,44.35401972428927,800.0000000000001</coordinates>
+				<coordinates>129.4861614704132,44.35401972428927,500.0000000000001</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark id="12">
