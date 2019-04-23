@@ -7,11 +7,15 @@ function onload(Cesium) {
     viewer._cesiumWidget._creditContainer.style.display = "none";
     var scene = viewer.scene;
     var  promise = scene.open('http://192.168.1.103:8090/iserver/services/3D-lh16/rest/realspace');
-    // promise.then(function (layers) {
-    //     viewer.camera.setView({
-    //         destination: Cesium.Cartesian3.fromDegrees(129.795674032311,45.428212336572,1200.693684695289) // 设置位置
-    //     });
-    // });
+    promise.then(function (layers) {
+        viewer.camera.setView({
+            destination: Cesium.Cartesian3.fromDegrees(129.792674032311,45.425990036572,1200.693684695289), // 设置位置
+            orientation: {
+                heading: Cesium.Math.toRadians(90.0), // 方向
+                pitch: Cesium.Math.toRadians(-60.0),// 倾斜角度
+            }
+        });
+    });
 
 
     viewer.dataSources.add(Cesium.KmlDataSource.load('../js/shipin234.kml', {
