@@ -14,9 +14,9 @@ function dianxing() {
 
 
     promise.then(function (layers) {
-        viewer.camera.setView({
-            destination: Cesium.Cartesian3.fromDegrees(116.380116005574, 39.987407826007498, 10000000.939740588888501), // 设置位置
-        });
+        // viewer.camera.setView({
+        //     destination: Cesium.Cartesian3.fromDegrees(116.380116005574, 39.987407826007498, 10000000.939740588888501), // 设置位置
+        // });
 
 
         $("#shuiba").click(function () {
@@ -71,3 +71,5 @@ $("#lianhua").window({
     }
 
 });
+
+

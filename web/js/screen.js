@@ -161,6 +161,6 @@ function setRollerShutterSplit(scene, rollerShutterConfig) {
             layer.splitDirection = Cesium.SplitDirection.NONE;
         }
     }
-}
 
+}
 
