@@ -1,5 +1,4 @@
 var entity=null;
-var shu=0;
 function onload(Cesium) {
     var viewer = new Cesium.Viewer('cesiumContainer',{
         infoBox: false,
@@ -39,8 +38,9 @@ function onload(Cesium) {
                 var html="";
 
                 if (pick && pick.id.name=="A000001"){
-                    shu=1;
-                    my_entity_array[shu].billboard.color = Cesium.Color.BLUE;
+                    my_entity_array[1].billboard.color = Cesium.Color.BLUE;
+                    my_entity_array[2].billboard.color = Cesium.Color.WHITE;
+                    my_entity_array[3].billboard.color = Cesium.Color.WHITE;
                     $('#win11').window('open');
                     // alert("dsaa")name
                     html+='<h3  align="center">A区摄像头传感器</h3>'
@@ -49,8 +49,9 @@ function onload(Cesium) {
                     document.getElementById("win11").innerHTML=html;
                 }
                 if (pick && pick.id.name=="A000002"){
-                    shu=2;
-                    my_entity_array[shu].billboard.color = Cesium.Color.BLUE;
+                    my_entity_array[1].billboard.color = Cesium.Color.WHITE;
+                    my_entity_array[2].billboard.color = Cesium.Color.BLUE;
+                    my_entity_array[3].billboard.color = Cesium.Color.WHITE;
                     $('#win11').window('open');
                     // alert("dsaa")name
                     html+='<h3  align="center">A区摄像头传感器</h3>'
@@ -59,8 +60,9 @@ function onload(Cesium) {
                     document.getElementById("win11").innerHTML=html;
                 }
                 if (pick && pick.id.name=="A000003"){
-                    shu=3;
-                    my_entity_array[shu].billboard.color = Cesium.Color.BLUE;
+                    my_entity_array[1].billboard.color = Cesium.Color.WHITE;
+                    my_entity_array[2].billboard.color = Cesium.Color.WHITE;
+                    my_entity_array[3].billboard.color = Cesium.Color.BLUE;
                     $('#win11').window('open');
                     // alert("dsaa")name
                     html+='<h3  align="center">A区摄像头传感器</h3>'
