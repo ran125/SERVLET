@@ -297,7 +297,7 @@ function onload(Cesium) {
                         id: 'dhs',
                         image: '../images/syh.png',
                         width: 120,
-                        height: 60
+                        height: 50
                     }
                 });
                 //沙河
@@ -307,7 +307,7 @@ function onload(Cesium) {
                         id: 'dhs',
                         image: '../images/sh.png',
                         width: 120,
-                        height: 60
+                        height: 50
                     }
                 });
                 //尔站河
@@ -317,7 +317,7 @@ function onload(Cesium) {
                         id: 'dhs',
                         image: '../images/ezh.png',
                         width: 120,
-                        height: 60
+                        height: 50
                     }
                 });
                 //珠耳朵河
@@ -327,7 +327,7 @@ function onload(Cesium) {
                         id: 'dhs',
                         image: '../images/zedh.png',
                         width: 120,
-                        height: 60
+                        height: 50
                     }
                 });
                 //黄泥河
@@ -337,15 +337,15 @@ function onload(Cesium) {
                         id: 'dhs',
                         image: '../images/hnh.png',
                         width: 120,
-                        height: 60
+                        height: 50
                     },
                 });
             };
         });
         flyManager.readyPromise.then(function () { // 飞行路线就绪
             var currentRoute = flyManager.currentRoute;
-            currentRoute.isLineVisible = true;
-            currentRoute.isStopVisible = true;
+            currentRoute.isLineVisible = false;
+            currentRoute.isStopVisible = false;
             //生成飞行文件中的所有站点列表
             var allStops = flyManager.getAllRouteStops();
             var menu = document.getElementById('stopList');
@@ -384,27 +384,6 @@ function onload(Cesium) {
             });*/
             $('#loadingbar').remove();
         });
-        //循环页面到达最后一个站点刷新
-        flyManager.stopArrived.addEventListener(function (routeStop) {
-            if (routeStop.index == 72) {
-                setTimeout(function () {
-                    location.reload()
-                }, 1000);
-            }
-            ;
-            //显示实体
-            //添加敦化市
-            if (routeStop.index == 9) {
-                viewer.entities.add({
-                    position: Cesium.Cartesian3.fromDegrees(128.240069243566, 43.36069446521731),
-                    billboard: {
-                        id: 'dhs',
-                        image: '../images/dhs2.png'
-                    }
-                });
-            }
-            ;
-        });
     });
 }
 function my_function_1(data,time)
@@ -418,12 +397,10 @@ function my_function_1(data,time)
 
 function my_function_2(data,time)
 {
-
     var xx = setInterval(function(){
         setTimeout(function(){data.show = false;}, 1000);
         setTimeout(function(){data.show = true;}, 100); }, 498);
         setTimeout(function(){clearInterval(xx);}, time);
-
 }
 
 
