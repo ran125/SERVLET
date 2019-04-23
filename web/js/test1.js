@@ -44,12 +44,10 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                time = 7000;
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_1(dataSources, time)
-                }, 2000);
+            })).then(function (dataSources,time) {
+                time=12000;
+                dataSources.show=false;
+                setTimeout(function(){my_function_1(dataSources,time)}, 2000);
 
             });
             //江源镇到红石水库
@@ -57,36 +55,30 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                time = 6000;
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_2(dataSources, time)
-                }, 3000);
+            })).then(function (dataSources,time) {
+                time=11000;
+                dataSources.show=false;
+                setTimeout(function(){my_function_2(dataSources,time)}, 3000);
             })
             //红石水库到敦化市
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/hongshishuiku.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                time = 6000;
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_3(dataSources, time)
-                }, 4000);
+            })).then(function (dataSources,time) {
+                time=10000;
+                dataSources.show=false;
+                setTimeout(function(){my_function_3(dataSources,time)}, 4000);
             })
             //敦化市到上沟水库
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/dunhuashi.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                time = 5000
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_4(dataSources, time)
-                }, 5000);
+            })).then(function (dataSources,time) {
+                time=9000
+                dataSources.show=false;
+                setTimeout(function(){my_function_4(dataSources,time)}, 5000);
             })
 
             //上沟水库到西崴子水库
@@ -94,12 +86,10 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                time = 4000
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_5(dataSources, time)
-                }, 6000);
+            })).then(function (dataSources,time) {
+                time=8000
+                dataSources.show=false;
+                setTimeout(function(){my_function_5(dataSources,time)}, 6000);
 
             })
             //西崴子水库到黑市水库
@@ -107,25 +97,21 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                time = 3000
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_6(dataSources, time)
-                }, 7000);
+            })).then(function (dataSources,time) {
+                time=7000
+                dataSources.show=false;
+                setTimeout(function(){my_function_6(dataSources,time)}, 7000);
 
             })
-            //黑石水库到雁鸣湖
+        //黑石水库到雁鸣湖
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/heishishuiku.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                time = 2000
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_7(dataSources, time)
-                }, 8000);
+            })).then(function (dataSources,time) {
+                time=6000
+                dataSources.show=false;
+                setTimeout(function(){my_function_7(dataSources,time)}, 8000);
 
             })
 
@@ -135,12 +121,10 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                time = 2000
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_8(dataSources, time)
-                }, 9000);
+            })).then(function (dataSources,time) {
+                time=5000
+                dataSources.show=false;
+                setTimeout(function(){my_function_8(dataSources,time)},9000);
 
             })
 
@@ -150,12 +134,10 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                time = 2000
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_9(dataSources, time)
-                }, 10000);
+            })).then(function (dataSources,time) {
+                 time=4000
+                dataSources.show=false;
+                setTimeout(function(){my_function_9(dataSources,time)}, 10000);
 
             })
 
@@ -165,7 +147,7 @@ function onload(Cesium) {
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
             })).then(function (dataSources, time) {
-                time = 2000
+                time = 3000
                 dataSources.show = false;
                 setTimeout(function () {
                     my_function_10(dataSources, time)
@@ -177,12 +159,10 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                // time=2000
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_11(dataSources, time)
-                }, 12000);
+            })).then(function (dataSources,time) {
+                time=2000
+                dataSources.show=false;
+                setTimeout(function(){my_function_11(dataSources,time)}, 12000);
 
             })
             //莲花水电厂到乌斯浑河
@@ -190,12 +170,10 @@ function onload(Cesium) {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
                 clampToS3M: true//设置贴对象(s3m)
-            })).then(function (dataSources, time) {
-                time = 2000
-                dataSources.show = false;
-                setTimeout(function () {
-                    my_function_12(dataSources, time)
-                }, 13000);
+            })).then(function (dataSources,time) {
+                time=1000
+                dataSources.show=false;
+                setTimeout(function(){my_function_12(dataSources,time)}, 13000);
             })
             // my_datasource_1.dataSource.show=false
             /*   viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly.kml', {
@@ -370,157 +348,106 @@ function onload(Cesium) {
         });
     });
 }
-
-function my_function_1(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 500);
-    // setTimeout(function(){clearInterval(xx);}, time);
+function my_function_1(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100);}, 500);
+        setTimeout(function(){clearInterval(xx);}, time);
 
 }
 
-function my_function_2(data, time) {
+function my_function_2(data,time)
+{
 
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+        setTimeout(function(){clearInterval(xx);}, time);
 
 }
 
 
-function my_function_3(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+function my_function_3(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    setTimeout(function(){clearInterval(xx);}, time);
+}
+function my_function_4(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100);}, 500);
+    setTimeout(function(){clearInterval(xx);}, time);
 }
 
-function my_function_4(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 500);
-    // setTimeout(function(){clearInterval(xx);}, time);
+function my_function_5(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    setTimeout(function(){clearInterval(xx);}, time);
+}
+function my_function_6(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    setTimeout(function(){clearInterval(xx);}, time);
 }
 
-function my_function_5(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
-}
-
-function my_function_6(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
-}
-
-function my_function_7(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+function my_function_7(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    setTimeout(function(){clearInterval(xx);}, time);
 }
 
 
-function my_function_8(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+function my_function_8(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    setTimeout(function(){clearInterval(xx);}, time);
 }
 
 
-function my_function_9(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+function my_function_9(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    setTimeout(function(){clearInterval(xx);}, time);
 }
 
 
-function my_function_10(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+function my_function_10(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    setTimeout(function(){clearInterval(xx);}, time);
 }
 
 
-function my_function_11(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+function my_function_11(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+    setTimeout(function(){clearInterval(xx);}, time);
 }
 
-function my_function_12(data, time) {
-    var xx = setInterval(function () {
-        setTimeout(function () {
-            data.show = false;
-        }, 1000);
-        setTimeout(function () {
-            data.show = true;
-        }, 100);
-    }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+function my_function_12(data,time)
+{
+    var xx = setInterval(function(){
+        setTimeout(function(){data.show = false;}, 1000);
+        setTimeout(function(){data.show = true;}, 100); }, 498);
+        setTimeout(function(){clearInterval(xx);}, time);
 }
 
 
