@@ -36,7 +36,6 @@ function onload(Cesium) {
             }
         });
 
-
         //添加全流域线-----------------------------------------------------------------------------------
         function addqly() {
             //牡丹岭到江源镇
@@ -50,7 +49,6 @@ function onload(Cesium) {
                 setTimeout(function () {
                     my_function_1(dataSources, time)
                 }, 2000);
-
             });
             //江源镇到红石水库
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/jiangyuanzhen2.kml', {
@@ -113,7 +111,6 @@ function onload(Cesium) {
                 setTimeout(function () {
                     my_function_6(dataSources, time)
                 }, 7000);
-
             })
             //黑石水库到雁鸣湖
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/heishishuiku.kml', {
@@ -126,10 +123,7 @@ function onload(Cesium) {
                 setTimeout(function () {
                     my_function_7(dataSources, time)
                 }, 8000);
-
             })
-
-
             //雁鸣湖到镜泊湖
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/yanminghu.kml', {
                 camera: viewer.scene.camera,
@@ -141,10 +135,7 @@ function onload(Cesium) {
                 setTimeout(function () {
                     my_function_8(dataSources, time)
                 }, 9000);
-
             })
-
-
             //镜泊湖到宁安市
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/jingpohu.kml', {
                 camera: viewer.scene.camera,
@@ -156,9 +147,7 @@ function onload(Cesium) {
                 setTimeout(function () {
                     my_function_9(dataSources, time)
                 }, 10000);
-
             })
-
             //宁安市到牡丹江
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/ningan.kml', {
                 camera: viewer.scene.camera,
@@ -170,7 +159,6 @@ function onload(Cesium) {
                 setTimeout(function () {
                     my_function_10(dataSources, time)
                 }, 11000);
-
             })
             //牡丹江到莲花水电厂
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/mudanjiang.kml', {
@@ -183,7 +171,6 @@ function onload(Cesium) {
                 setTimeout(function () {
                     my_function_11(dataSources, time)
                 }, 12000);
-
             })
             //莲花水电厂到乌斯浑河
             var my_datasource_1 = viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly/lianhua.kml', {
@@ -197,12 +184,6 @@ function onload(Cesium) {
                     my_function_12(dataSources, time)
                 }, 13000);
             })
-            // my_datasource_1.dataSource.show=false
-            /*   viewer.dataSources.add(Cesium.KmlDataSource.load('../js/qly.kml', {
-                   camera: viewer.scene.camera,
-                   canvas: viewer.scene.canvas,
-                   clampToS3M: true//设置贴对象(s3m)
-               }));*/
             viewer.dataSources.add(Cesium.KmlDataSource.load('../js/newhbh.kml', {
                 camera: viewer.scene.camera,
                 canvas: viewer.scene.canvas,
@@ -228,11 +209,9 @@ function onload(Cesium) {
                 }
             });
         }
-
         function bs() {
             var i = 1;
             xunhua = setInterval(scoreCounter, 1000);
-
             function scoreCounter() {
                 if (i < 16) {
                     my_entity_array[i].billboard.color = Cesium.Color.YELLOW
@@ -254,20 +233,11 @@ function onload(Cesium) {
                   }
                   layers[i].refresh();
               }*/
-
-        //音乐播放与飞行开始--------------------------------------------------------------------------------------------------------
-        /*     function bofang() {
-                 if (audio.paused) { //判读是否播放??
-                     audio.paused = false;
-                     audio.play(); //没有就播放?
-                 }
-             }*/
-
-        //全流域飞行
+        //全流域飞行-----------------------------------------------------------------------------------------------------
         function flys() {
             clearInterval(xunhua);
-          /*  viewer.dataSources.remove(viewer.dataSources.get(0));
-            viewer.dataSources.remove(viewer.dataSources.get(1));*/
+            /*  viewer.dataSources.remove(viewer.dataSources.get(0));
+              viewer.dataSources.remove(viewer.dataSources.get(1));*/
             //viewer.entities.removeAll();
             scene.globe.depthTestAgainstTerrain = false;
             flyManager.play();
@@ -282,7 +252,6 @@ function onload(Cesium) {
             //flyOverLongitude: 100, // 如果到达目的地有2种方式，设置具体值后会强制选择方向飞过这个经度
             // 到达位置后执行的回调函数
             complete: function () {
-                /* bofang();*/
                 addqly();
                 bs();
                 setTimeout(flys, 14000);
@@ -304,7 +273,67 @@ function onload(Cesium) {
         //注册站点到达事件
         flyManager.stopArrived.addEventListener(function (routeStop) {
             routeStop.waitTime = 0.0; // 在每个站点处停留1s
+            //刷新
+            if (routeStop.index == 40) {
+                setTimeout(function () {
+                    location.reload()
+                }, 1500);
+            };
+            //显示实体
+            if (routeStop.index == 8) {
+                //松乙河
+                viewer.entities.add({
+                    position: Cesium.Cartesian3.fromDegrees(129.02446746826175, 43.776423786343244),
+                    billboard: {
+                        id: 'dhs',
+                        image: '../images/syh.png',
+                        width: 120,
+                        height: 60
+                    }
+                });
+                //沙河
+                viewer.entities.add({
+                    position: Cesium.Cartesian3.fromDegrees(128.8898849487305, 43.720621518680396),
+                    billboard: {
+                        id: 'dhs',
+                        image: '../images/sh.png',
+                        width: 120,
+                        height: 60
+                    }
+                });
+                //尔站河
+                viewer.entities.add({
+                    position: Cesium.Cartesian3.fromDegrees(128.8078308105469, 43.93041533505164),
+                    billboard: {
+                        id: 'dhs',
+                        image: '../images/ezh.png',
+                        width: 120,
+                        height: 60
+                    }
+                });
+                //珠耳朵河
+                viewer.entities.add({
+                    position: Cesium.Cartesian3.fromDegrees(128.73435974121097, 43.87574683839942),
+                    billboard: {
+                        id: 'dhs',
+                        image: '../images/zedh.png',
+                        width: 120,
+                        height: 60
+                    }
+                });
+                //黄泥河
+                viewer.entities.add({
+                    position: Cesium.Cartesian3.fromDegrees(128.70586395263675, 43.82598212595196),
+                    billboard: {
+                        id: 'dhs',
+                        image: '../images/hnh.png',
+                        width: 120,
+                        height: 60
+                    },
+                });
+            };
         });
+
         flyManager.readyPromise.then(function () { // 飞行路线就绪
             var currentRoute = flyManager.currentRoute;
             currentRoute.isLineVisible = true;
@@ -347,27 +376,6 @@ function onload(Cesium) {
             });*/
             $('#loadingbar').remove();
         });
-        //循环页面到达最后一个站点刷新
-        flyManager.stopArrived.addEventListener(function (routeStop) {
-            if (routeStop.index == 72) {
-                setTimeout(function () {
-                    location.reload()
-                }, 1000);
-            }
-            ;
-            //显示实体
-            //添加敦化市
-            if (routeStop.index == 9) {
-                viewer.entities.add({
-                    position: Cesium.Cartesian3.fromDegrees(128.240069243566, 43.36069446521731),
-                    billboard: {
-                        id: 'dhs',
-                        image: '../images/dhs2.png'
-                    }
-                });
-            }
-            ;
-        });
     });
 }
 
@@ -380,7 +388,7 @@ function my_function_1(data, time) {
             data.show = true;
         }, 100);
     }, 500);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 
 }
 
@@ -394,7 +402,7 @@ function my_function_2(data, time) {
             data.show = true;
         }, 100);
     }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 
 }
 
@@ -408,7 +416,7 @@ function my_function_3(data, time) {
             data.show = true;
         }, 100);
     }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 }
 
 function my_function_4(data, time) {
@@ -420,7 +428,7 @@ function my_function_4(data, time) {
             data.show = true;
         }, 100);
     }, 500);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 }
 
 function my_function_5(data, time) {
@@ -432,7 +440,7 @@ function my_function_5(data, time) {
             data.show = true;
         }, 100);
     }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 }
 
 function my_function_6(data, time) {
@@ -444,7 +452,7 @@ function my_function_6(data, time) {
             data.show = true;
         }, 100);
     }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 }
 
 function my_function_7(data, time) {
@@ -456,7 +464,7 @@ function my_function_7(data, time) {
             data.show = true;
         }, 100);
     }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+    setTimeout(function(){clearInterval(xx);}, time);
 }
 
 
@@ -469,7 +477,7 @@ function my_function_8(data, time) {
             data.show = true;
         }, 100);
     }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 }
 
 
@@ -482,7 +490,7 @@ function my_function_9(data, time) {
             data.show = true;
         }, 100);
     }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 }
 
 
@@ -495,7 +503,7 @@ function my_function_10(data, time) {
             data.show = true;
         }, 100);
     }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 }
 
 
@@ -508,7 +516,7 @@ function my_function_11(data, time) {
             data.show = true;
         }, 100);
     }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 }
 
 function my_function_12(data, time) {
@@ -520,7 +528,7 @@ function my_function_12(data, time) {
             data.show = true;
         }, 100);
     }, 498);
-    // setTimeout(function(){clearInterval(xx);}, time);
+     setTimeout(function(){clearInterval(xx);}, time);
 }
 
 

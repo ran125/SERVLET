@@ -2,192 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document id="featureCollection">
 	<name>li.kml</name>
-	<Style id="failed15">
-		<IconStyle>
-			<Icon>
-				<href>../images/nas2.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed16">
-		<IconStyle>
-			<Icon>
-				<href>../images/lhsdc2.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_s">
-		<IconStyle>
-			<Icon>
-				<href>../images/s.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="failed16013">
-		<IconStyle>
-			<Icon>
-				<href>../images/xwzsk.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed">
-		<IconStyle>
-			<Icon>
-				<href>../images/mdl4.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<StyleMap id="failed17">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed16</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed1300</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="failed3">
-		<IconStyle>
-			<Icon>
-				<href>../images/mdl4.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<StyleMap id="failed170">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed1608</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed135</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="failed18">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed19</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed15</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="failed2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed40</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="failed1703">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed1603</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed132</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="failed1704">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed16013</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed136</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="failed0">
-		<IconStyle>
-			<Icon>
-				<href>../images/dslpb.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="failed1608">
-		<IconStyle>
-			<Icon>
-				<href>../images/hssk.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed132">
-		<IconStyle>
-			<Icon>
-				<href>../images/sgsk.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed137">
-		<IconStyle>
-			<Icon>
-				<href>../images/hssk2.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed4">
-		<IconStyle>
-			<Icon>
-				<href>../images/jbhsk2.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<StyleMap id="failed20">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed4</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed00</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="failed21">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed200</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed5</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_mdjs2">
-		<IconStyle>
-			<Icon>
-				<href>../images/mdjs2.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="failed17010">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed16011</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed131</styleUrl>
-		</Pair>
-	</StyleMap>
+	<open>1</open>
 	<StyleMap id="failed1708">
 		<Pair>
 			<key>normal</key>
@@ -206,54 +21,29 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
-	<StyleMap id="failed1709">
+	<Style id="failed135">
+		<IconStyle>
+			<Icon>
+				<href>../images/hssk.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="failed17">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#failed16012</styleUrl>
+			<styleUrl>#failed160</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#failed137</styleUrl>
+			<styleUrl>#failed13000</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="failed1300">
+	<Style id="sn_mdjs2">
 		<IconStyle>
 			<Icon>
-				<href>../images/lhsdc2.png</href>
+				<href>../images/mdjs2.png</href>
 			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed16011">
-		<IconStyle>
-			<Icon>
-				<href>../images/ymh.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed00">
-		<IconStyle>
-			<Icon>
-				<href>../images/jbhsk2.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed131">
-		<IconStyle>
-			<Icon>
-				<href>../images/ymh.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed1602">
-		<IconStyle>
-			<Icon>
-				<href>../images/jyz.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
 	<StyleMap id="msn_mdjs2">
@@ -266,38 +56,70 @@
 			<styleUrl>#sh_s</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="failed16012">
+	<Style id="failed1300">
 		<IconStyle>
 			<Icon>
-				<href>../images/hssk2.png</href>
+				<href>../images/lhsdc2.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
-	<StyleMap id="failed1">
+	<StyleMap id="failed170">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#failed3</styleUrl>
+			<styleUrl>#failed1608</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#failed</styleUrl>
+			<styleUrl>#failed135</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="failed40">
+	<StyleMap id="failed2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed40</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed19">
 		<IconStyle>
 			<Icon>
-				<href>../images/dslpb.png</href>
+				<href>../images/nas2.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
-	<Style id="failed135">
+	<Style id="failed3">
 		<IconStyle>
 			<Icon>
-				<href>../images/hssk.png</href>
+				<href>../images/mdl4.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed15">
+		<IconStyle>
+			<Icon>
+				<href>../images/nas2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed">
+		<IconStyle>
+			<Icon>
+				<href>../images/mdl4.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed137">
+		<IconStyle>
+			<Icon>
+				<href>../images/hssk2.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -310,10 +132,180 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
-	<Style id="failed200">
+	<Style id="failed16">
 		<IconStyle>
 			<Icon>
-				<href>../images/dhs2.png</href>
+				<href>../images/lhsdc2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed1602">
+		<IconStyle>
+			<Icon>
+				<href>../images/jyz.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="failed20">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed16013">
+		<IconStyle>
+			<Icon>
+				<href>../images/xwzsk.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed00">
+		<IconStyle>
+			<Icon>
+				<href>../images/jbhsk2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed132">
+		<IconStyle>
+			<Icon>
+				<href>../images/sgsk.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed16011">
+		<IconStyle>
+			<Icon>
+				<href>../images/ymh.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="failed171">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed1300</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed4">
+		<IconStyle>
+			<Icon>
+				<href>../images/jbhsk2.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed1608">
+		<IconStyle>
+			<Icon>
+				<href>../images/hssk.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="failed1704">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed16013</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed136</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed19</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed17010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed16011</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed131</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed131">
+		<IconStyle>
+			<Icon>
+				<href>../images/ymh.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed13000">
+		<IconStyle>
+			<Icon>
+				<href>../images/jbhsdz.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="failed1709">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed16012</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed137</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed13">
+		<IconStyle>
+			<Icon>
+				<href>../images/jyz.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="failed1703">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed1603</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed132</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed16012">
+		<IconStyle>
+			<Icon>
+				<href>../images/hssk2.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -326,18 +318,53 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
-	<Style id="failed13">
+	<Style id="failed40">
 		<IconStyle>
 			<Icon>
-				<href>../images/jyz.png</href>
+				<href>../images/dslpb.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
-	<Style id="failed19">
+	<Style id="failed160">
 		<IconStyle>
 			<Icon>
-				<href>../images/nas2.png</href>
+				<href>../images/jbhsdz.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="failed0">
+		<IconStyle>
+			<Icon>
+				<href>../images/dslpb.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="failed21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed200</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_s">
+		<IconStyle>
+			<Icon>
+				<href>../images/s.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="failed200">
+		<IconStyle>
+			<Icon>
+				<href>../images/dhs2.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
@@ -397,23 +424,23 @@
 			</ExtendedData>
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
-				<coordinates>128.29915523529056,43.42545044731356,800.0000000000001</coordinates>
+				<coordinates>128.2991552352906,43.42545044731356,800.0000000000001</coordinates>
 			</Point>
 		</Placemark>
-			<Placemark id="5">
-        			<styleUrl>#failed170</styleUrl>
-        			<ExtendedData>
-        				<Data name="content">
-        				</Data>
-        				<Data name="my_fileds">
-        					<value>128.31885337829593,43.477895311255764,200</value>
-        				</Data>
-        			</ExtendedData>
-        			<Point>
-        				<altitudeMode>absolute</altitudeMode>
-        				<coordinates>128.31885337829593,43.477895311255764,800.0000000000001</coordinates>
-        			</Point>
-        		</Placemark>
+		<Placemark id="5">
+			<styleUrl>#failed170</styleUrl>
+			<ExtendedData>
+				<Data name="content">
+				</Data>
+				<Data name="my_fileds">
+					<value>128.31885337829593,43.477895311255764,200</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>128.3188533782959,43.47789531125576,800.0000000000001</coordinates>
+			</Point>
+		</Placemark>
 		<Placemark id="6">
 			<styleUrl>#failed1704</styleUrl>
 			<ExtendedData>
@@ -485,6 +512,20 @@
 			</Point>
 		</Placemark>
 		<Placemark id="11">
+			<styleUrl>#failed17</styleUrl>
+			<ExtendedData>
+				<Data name="content">
+				</Data>
+				<Data name="my_fileds">
+					<value>128.9855563843019,44.05812435486256,200</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>128.9855563843019,44.05812435486256,300</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="12">
 			<styleUrl>#failed18</styleUrl>
 			<ExtendedData>
 				<Data name="content">
@@ -497,7 +538,7 @@
 				<coordinates>129.4861614704132,44.35401972428927,500.0000000000001</coordinates>
 			</Point>
 		</Placemark>
-		<Placemark id="12">
+		<Placemark id="13">
 			<styleUrl>#msn_mdjs2</styleUrl>
 			<ExtendedData>
 				<Data name="content">
@@ -508,11 +549,11 @@
 			</ExtendedData>
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
-				<coordinates>129.6239250898362,44.57009438582685,800.0000000000001</coordinates>
+				<coordinates>129.6239250898362,44.57009438582685,350.0000000000001</coordinates>
 			</Point>
 		</Placemark>
-		<Placemark id="13">
-			<styleUrl>#failed17</styleUrl>
+		<Placemark id="14">
+			<styleUrl>#failed171</styleUrl>
 			<ExtendedData>
 				<Data name="content">
 				</Data>
@@ -522,7 +563,7 @@
 			</ExtendedData>
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
-				<coordinates>129.7995185852051,45.43266561326346,800.0000000000001</coordinates>
+				<coordinates>129.7995185852051,45.43266561326346,600.0000000000001</coordinates>
 			</Point>
 		</Placemark>
 	</Folder>
