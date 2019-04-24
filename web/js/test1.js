@@ -1,6 +1,15 @@
 var flyManager;
 var audio = document.getElementById("aa");
-
+$("#header-menu").mouseover(
+    function () {
+        $(".header-menu1").show();
+    }
+);
+$("#header-menu").mouseout(
+    function () {
+        $(".header-menu1").hide();
+    }
+);
 function onload(Cesium) {
     audio.play();
     var toolbar = document.getElementById('toolbar');
@@ -398,6 +407,17 @@ function onload(Cesium) {
             $('#loadingbar').remove();
         });
     });
+/*    handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
+    handler.setInputAction(function (click) {
+        var outerEle = document.getElementById('cesiumContainer');
+        outerEle.onmouseover = function(e) {
+            if(e.clientY<= 40){
+                $(".header-menu1").show();
+            }else{
+                $(".header-menu1").hide();
+            };
+        }
+    }, Cesium.ScreenSpaceEventType.MOUSE_MOVE)*/
 }
 function my_function_1(data,time)
 {

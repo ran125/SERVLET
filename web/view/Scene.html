@@ -25,26 +25,27 @@
 
 </head>
 <body>
-
 <div class="easyui-layout" style="width:100%;height:100%;">
     <div data-options="region:'center',split:true,tools:'#tt'" style="width:80%;  overflow: hidden ">
-        <div id="tts" data-options="border:false" style="height: 30px;">
-            <button type="button" id="play" class="easyui-linkbutton" ><img src="../images/kaishi.png" style="width: 15px;height: 15px;">&nbsp;开 始</button>
-            <button type="button" id="pause" class="easyui-linkbutton "><img src="../images/zanting.png" style="width: 15px;height: 15px;">&nbsp;暂 停</button>
-            <button type="button" id="stop" class="easyui-linkbutton " style="display: none"><img src="../images/tingzhi.png" style="width: 15px;height: 15px">&nbsp;停 止</button>
-            <select id="stopList" class="form-control" style="width: 50%; "></select>
-            <label><input type="checkbox" id="show-line" style="display: none"> <!--显示飞行路线--></label>
-            <label><input type="checkbox" id="show-stop" style="display: none"><!-- 显示飞行站点--></label>
 
+        <div id="cesiumContainer" ondblclick="fullscreen(),exitFullscreen()">
+            <div class="tool-bar" id="header-menu">
+                <div id="toolbar" class="param-container tool-bar header-menu1">
+                    <div id="tts" data-options="border:false" style="height: 30px;">
+                        <button type="button" id="play" class="easyui-linkbutton easyui-linkbutton1"><img src="../images/kaishi.png" style="width: 15px;height: 15px;">&nbsp;开 始</button>
+                        <button type="button" id="pause" class="easyui-linkbutton easyui-linkbutton1 "><img src="../images/zanting.png" style="width: 15px;height: 15px;">&nbsp;暂 停</button>
+                        <!-- <button type="button" id="stop" class="easyui-linkbutton " style="display: none"><img src="../images/tingzhi.png" style="width: 15px;height: 15px">&nbsp;停 止</button>-->
+                        <select id="stopList" class="form-control" style="width: 50%; display: none"></select>
+                        <label><input type="checkbox" id="show-line" style="display: none"> <!--显示飞行路线--></label>
+                        <label><input type="checkbox" id="show-stop" style="display: none"><!-- 显示飞行站点--></label>
+                     </div>
+                </div>
+            </div>
         </div>
-
-        <div id="cesiumContainer"  ondblclick="fullscreen(),exitFullscreen()"></div>
         <audio loop="loop" src="../music/music.mp3" controls="controls" id="aa"></audio>
     </div>
 </div>
-
 </body>
-
 
 <script type="text/javascript" src="../js/my_config.js"></script>
 <!--<script src="../js/test.js"></script>-->
