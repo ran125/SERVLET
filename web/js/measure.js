@@ -3,11 +3,12 @@
  */
 function onload(Cesium) {
     viewer = new Cesium.Viewer('cesiumContainer',{infoBox:false,selectionIndicator: false});
+    //移除双击事件
+    viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
     var clampMode = 0; // 空间模式
     var handlerDis, handlerArea, handlerHeight;
     scene = viewer.scene;
     var camera = scene.camera;
-
     var dataServiceUrl = 'http://192.168.1.103:8090/iserver/services/data-lh6/rest/data/featureResults.rjson?returnContent=true'; // 数据服务URL
     var dataSourceName = 'px_shy'; // 数据源名称
     var dataSetName = 'BackUp_IsoLine_1'; // 数据集名称

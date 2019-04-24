@@ -3,6 +3,7 @@ function onload(Cesium) {
     var viewer = new Cesium.Viewer('cesiumContainer',{
         infoBox: false,
         selectionIndicator: false});
+    viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
     viewer._cesiumWidget._creditContainer.style.display = "none";
     var scene = viewer.scene;
 

@@ -3,8 +3,10 @@ function onload(Cesium) {
     var viewer = new Cesium.Viewer('cesiumContainer',{
         infoBox: false,
         selectionIndicator: false,
-        trackedEntityChanged:false
+        trackedEntityChanged:false,
     });
+    //移除双击事件
+    viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
     viewer._cesiumWidget._creditContainer.style.display = "none";
     var scene = viewer.scene;
     var  promise = scene.open('http://192.168.1.103:8090/iserver/services/3D-lh16/rest/realspace');

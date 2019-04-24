@@ -1,5 +1,7 @@
 function onload(Cesium) {
-  viewer = new Cesium.Viewer('cesiumContainer',{infoBox:false});
+  viewer = new Cesium.Viewer('cesiumContainer',{infoBox:false,selectionIndicator: false});
+    //移除双击事件
+    viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
     scene = viewer.scene;
     camera =  scene.camera;
     //添加S3M图层服务
