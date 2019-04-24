@@ -508,7 +508,7 @@
 <camera>
 <longitude>128.9526484215912</longitude>
 <latitude>44.03709674162271</latitude>
-<altitude>800</altitude>
+<altitude>500</altitude>
 <heading>-330</heading>
 <tilt>50</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -560,9 +560,9 @@
 <camera>
 <longitude>128.9805018261677</longitude>
 <latitude>44.04913720062022</latitude>
-<altitude>500</altitude>
+<altitude>450</altitude>
 <heading>-330</heading>
-<tilt>70</tilt>
+<tilt>60</tilt>
 <altitudeMode>Absolute</altitudeMode>
 </camera>
 <style>
@@ -842,13 +842,13 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
-<routestop name="Stop90" speed="40" excluded="False" viewType="camera">
+<routestop name="Stop90" speed="50" excluded="False" viewType="camera">
 <camera>
-<longitude>129.8090895391523</longitude>
-<latitude>45.42716099613892</latitude>
+<longitude>129.8089453517391</longitude>
+<latitude>45.42068505254041</latitude>
 <altitude>200</altitude>
-<heading>-75</heading>
-<tilt>70</tilt>
+<heading>0</heading>
+<tilt>80</tilt>
 <altitudeMode>Absolute</altitudeMode>
 </camera>
 <style>
@@ -868,6 +868,34 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
+
+<routestop name="Stop90" speed="50" excluded="False" viewType="camera">
+<camera>
+<longitude>129.8090895391523</longitude>
+<latitude>45.42716099613892</latitude>
+<altitude>200</altitude>
+<heading>-75</heading>
+<tilt>75</tilt>
+<altitudeMode>Absolute</altitudeMode>
+</camera>
+<style>
+<geostyle3d>
+<icon/>
+<markersize>4.8</markersize>
+<markericonscale>1</markericonscale>
+<markercolor>RGBA(255,255,255,255)</markercolor>
+</geostyle3d>
+</style>
+<setting>
+<turnTime>1.5</turnTime>
+<turnSlowly>False</turnSlowly>
+<stopPlayMode>StopPause</stopPlayMode>
+<autoPlay>False</autoPlay>
+<pauseTime>0</pauseTime>
+<angularSpeed>1</angularSpeed>
+</setting>
+</routestop>
+
 <routestop name="Stop67" speed="40" excluded="False" viewType="camera">
 <camera>
 <longitude>129.7981866076671</longitude>
@@ -948,8 +976,8 @@
 </routestop>
 <routestop name="Stop67" speed="40" excluded="False" viewType="camera">
 <camera>
-<longitude>129.7997501970589</longitude>
-<latitude>45.44462129772542</latitude>
+<longitude>129.7966298249076</longitude>
+<latitude>45.44038064427845</latitude>
 <altitude>200</altitude>
 <heading>15</heading>
 <tilt>70</tilt>

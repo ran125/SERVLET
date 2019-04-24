@@ -195,6 +195,9 @@ function onload(Cesium) {
                         my_entity_array[i].billboard.distanceDisplayCondition = new Cesium.DistanceDisplayCondition(1.0, 4800000.0);
                         my_entity_array[i].billboard.verticalOrigin = Cesium.VerticalOrigin.BOTTOM;// 调整垂直方向的原点，保证图标里的针尖对着地表位置
                     }
+                    if (i ==7||i ==11){
+                        my_entity_array[i].billboard.pixelOffset = new Cesium.Cartesian2(20,-20);
+                    }
                 }
             });
             viewer.camera.setView({
@@ -293,7 +296,7 @@ function onload(Cesium) {
         flyManager.stopArrived.addEventListener(function (routeStop) {
             routeStop.waitTime = 0.0; // 在每个站点处停留1s
             //刷新
-            if (routeStop.index == 40) {
+            if (routeStop.index == 41) {
                 setTimeout(function () {
                     location.reload()
                 }, 1500);
