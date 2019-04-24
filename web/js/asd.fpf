@@ -430,7 +430,7 @@
 <camera>
 <longitude>128.9603268030728</longitude>
 <latitude>44.0372898468108</latitude>
-<altitude>800</altitude>
+<altitude>500</altitude>
 <heading>-40</heading>
 <tilt>50</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -456,7 +456,7 @@
 <camera>
 <longitude>128.9596324359957</longitude>
 <latitude>44.044408184957</latitude>
-<altitude>800</altitude>
+<altitude>500</altitude>
 <heading>-150</heading>
 <tilt>50</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -482,7 +482,7 @@
 <camera>
 <longitude>128.9496256091043</longitude>
 <latitude>44.04368816481853</latitude>
-<altitude>800</altitude>
+<altitude>500</altitude>
 <heading>-230</heading>
 <tilt>50</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -560,7 +560,7 @@
 <camera>
 <longitude>128.9805018261677</longitude>
 <latitude>44.04913720062022</latitude>
-<altitude>700</altitude>
+<altitude>500</altitude>
 <heading>-330</heading>
 <tilt>70</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -586,7 +586,7 @@
 <camera>
 <longitude>128.9810957594579</longitude>
 <latitude>44.05887906163057</latitude>
-<altitude>700</altitude>
+<altitude>500</altitude>
 <heading>-250</heading>
 <tilt>30</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -846,7 +846,7 @@
 <camera>
 <longitude>129.8090895391523</longitude>
 <latitude>45.42716099613892</latitude>
-<altitude>300</altitude>
+<altitude>200</altitude>
 <heading>-75</heading>
 <tilt>70</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -872,7 +872,7 @@
 <camera>
 <longitude>129.7981866076671</longitude>
 <latitude>45.42812545585946</latitude>
-<altitude>300</altitude>
+<altitude>200</altitude>
 <heading>-75</heading>
 <tilt>70</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -898,7 +898,7 @@
 <camera>
 <longitude>129.791617804714</longitude>
 <latitude>45.42934804299839</latitude>
-<altitude>300</altitude>
+<altitude>200</altitude>
 <heading>0</heading>
 <tilt>70</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -924,7 +924,7 @@
 <camera>
 <longitude>129.7958838075608</longitude>
 <latitude>45.43884170262685</latitude>
-<altitude>300</altitude>
+<altitude>200</altitude>
 <heading>15</heading>
 <tilt>70</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -950,7 +950,7 @@
 <camera>
 <longitude>129.7997501970589</longitude>
 <latitude>45.44462129772542</latitude>
-<altitude>300</altitude>
+<altitude>200</altitude>
 <heading>15</heading>
 <tilt>70</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -976,7 +976,7 @@
 <camera>
 <longitude>129.7906064452168</longitude>
 <latitude>45.4460940900923</latitude>
-<altitude>300</altitude>
+<altitude>200</altitude>
 <heading>-180</heading>
 <tilt>70</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -998,11 +998,11 @@
 <angularSpeed>1</angularSpeed>
 </setting>
 </routestop>
-<routestop name="Stop67" speed="40" excluded="False" viewType="camera">
+<routestop name="Stop67" speed="45+" excluded="False" viewType="camera">
 <camera>
 <longitude>129.7900111267454</longitude>
 <latitude>45.43803240368533</latitude>
-<altitude>300</altitude>
+<altitude>200</altitude>
 <heading>-120</heading>
 <tilt>70</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -1028,7 +1028,7 @@
 <camera>
 <longitude>129.7824294913836</longitude>
 <latitude>45.43270012828187</latitude>
-<altitude>300</altitude>
+<altitude>200</altitude>
 <heading>-180</heading>
 <tilt>70</tilt>
 <altitudeMode>Absolute</altitudeMode>
@@ -1054,11 +1054,11 @@
 
 <routestop name="Stop67" speed="60" excluded="False" viewType="camera">
 <camera>
-<longitude>129.7919918827024</longitude>
-<latitude>45.42558769046704</latitude>
-<altitude>300</altitude>
-<heading>-240</heading>
-<tilt>70</tilt>
+<longitude>129.7872571944153</longitude>
+<latitude>45.42455325820497</latitude>
+<altitude>150</altitude>
+<heading>-280</heading>
+<tilt>75</tilt>
 <altitudeMode>Absolute</altitudeMode>
 </camera>
 <style>
