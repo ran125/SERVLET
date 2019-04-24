@@ -2,7 +2,7 @@
  * 测量
  */
 function onload(Cesium) {
-    viewer = new Cesium.Viewer('cesiumContainer',{infoBox:false});
+    viewer = new Cesium.Viewer('cesiumContainer',{infoBox:false,selectionIndicator: false});
     var clampMode = 0; // 空间模式
     var handlerDis, handlerArea, handlerHeight;
     scene = viewer.scene;
