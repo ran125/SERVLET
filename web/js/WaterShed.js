@@ -6,7 +6,11 @@ function onload(Cesium) {
     });
     var viewer2 = new Cesium.Viewer('cesiumContainer2',{
         infoBox: false,
+        selectionIndicator: false,
+        fullscreenButton:true
     });
+    //移除双击事件
+    viewer2.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
     viewer._cesiumWidget._creditContainer.style.display = "none";
     viewer2._cesiumWidget._creditContainer.style.display = "none";
     //加载底图
