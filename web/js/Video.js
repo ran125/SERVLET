@@ -9,7 +9,7 @@ function onload(Cesium) {
     viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
     viewer._cesiumWidget._creditContainer.style.display = "none";
     var scene = viewer.scene;
-    var  promise = scene.open('http://192.168.1.103:8090/iserver/services/3D-lh16/rest/realspace');
+    var  promise = scene.open(url.name);
     promise.then(function (layers) {
         viewer.camera.setView({
             destination: Cesium.Cartesian3.fromDegrees(129.792674032311,45.425990036572,1200.693684695289), // 设置位置
