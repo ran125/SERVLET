@@ -48,7 +48,7 @@ function onload(Cesium) {
     });
     $("#tx").click(function () {
         camera.flyTo({
-            destination: Cesium.Cartesian3.fromDegrees(129.785853530306 ,   45.4170917653681 ,   362.840420007114),
+            destination: Cesium.Cartesian3.fromDegrees(129.785853530306 ,45.4170917653681 ,362.840420007114),
             orientation: {
                 heading: Cesium.Math.toRadians(20.0), // 方向
                 pitch: Cesium.Math.toRadians(-10.0),// 倾斜角度

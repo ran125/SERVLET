@@ -9,9 +9,9 @@ function onload(Cesium) {
     var handlerDis, handlerArea, handlerHeight;
     scene = viewer.scene;
     var camera = scene.camera;
-    var dataServiceUrl = 'http://192.168.1.103:8090/iserver/services/data-lh6/rest/data/featureResults.rjson?returnContent=true'; // 数据服务URL
-    var dataSourceName = 'px_shy'; // 数据源名称
-    var dataSetName = 'BackUp_IsoLine_1'; // 数据集名称
+    var dataServiceUrl = url_dataSource.name; // 数据服务URL
+    var dataSourceName = dataSource.name; // 数据源名称
+    var dataSetName = dataSet.name; // 数据集名称
     //添加S3M图层服务
     promise = scene.open(url.name);
     //去掉地图logo
