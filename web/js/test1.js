@@ -234,6 +234,7 @@ function onload(Cesium) {
 //模型贴地---------------------------------------------------------------------------------------------------------
            for(var i=0; i<layers.length; i++)  //模型贴地，这里电塔有问题，降高度后位置错乱，做数据的没做好
               {
+
                   if(layers[i].name.indexOf("ModelEdit_px@3dmax") >= 0 )
                   {
                       layers[i].style3D.bottomAltitude =-150;
