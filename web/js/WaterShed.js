@@ -24,6 +24,36 @@ function onload(Cesium) {
     }));
     var scene = viewer2.scene;
     promise = scene.open(url.name);
+
+    promise.then(function (layers) {
+        //模型贴地---------------------------------------------------------------------------------------------------------
+        for(var i=0; i<layers.length; i++)  //模型贴地，这里电塔有问题，降高度后位置错乱，做数据的没做好
+        {
+            if(layers[i].name.indexOf("ModelEdit_px@3dmax") >= 0 )
+            {
+                layers[i].style3D.bottomAltitude =-150;
+            }
+            if (layers[i].name.indexOf("New_Region3D_1@LH1_1") >= 0)
+            { //中间水面
+                layers[i].style3D.bottomAltitude = 0;
+            }
+            if (layers[i].name.indexOf("New_Region3D@LH1_1") >= 0)
+            { //大坝水面
+                layers[i].style3D.bottomAltitude = 0;
+            }
+            if (layers[i].name.indexOf("Config2") >= 0)
+            {//模型
+                layers[i].style3D.bottomAltitude =-150;
+            }
+            layers[i].refresh();
+        }
+    });
+
+
+
+
+
+
     //设置相机视角
     viewer.camera.setView({
         destination: Cesium.Cartesian3.fromDegrees(129.38840188064577, 42.70417880491015, 150000), // 设置位置
