@@ -236,7 +236,32 @@ function onload(Cesium) {
                  audio.play(); //没有就播放?
              }
          }*/
-
+function add3D() {
+    promise = scene.open(url.name);
+    promise.then(function (layers) {
+        //模型贴地---------------------------------------------------------------------------------------------------------
+        for(var i=0; i<layers.length; i++)  //模型贴地，这里电塔有问题，降高度后位置错乱，做数据的没做好
+        {
+            if(layers[i].name.indexOf("ModelEdit_px@3dmax") >= 0 )
+            {
+                layers[i].style3D.bottomAltitude =-150;
+            }
+            if (layers[i].name.indexOf("New_Region3D_1@LH1_1") >= 0)
+            { //中间水面
+                layers[i].style3D.bottomAltitude = 0;
+            }
+            if (layers[i].name.indexOf("New_Region3D@LH1_1") >= 0)
+            { //大坝水面
+                layers[i].style3D.bottomAltitude = 0;
+            }
+            if (layers[i].name.indexOf("Config2") >= 0)
+            {//模型
+                layers[i].style3D.bottomAltitude =-150;
+            }
+            layers[i].refresh();
+        }
+    });
+}
     //全流域飞行
     function flys() {
         clearInterval(xunhua);
@@ -244,34 +269,13 @@ function onload(Cesium) {
           viewer.dataSources.remove(viewer.dataSources.get(1));*/
         //viewer.entities.removeAll();
         //添加S3M图层服务
-        promise = scene.open(url.name);
-        promise.then(function (layers) {
-            //模型贴地---------------------------------------------------------------------------------------------------------
-            for(var i=0; i<layers.length; i++)  //模型贴地，这里电塔有问题，降高度后位置错乱，做数据的没做好
-            {
-                if(layers[i].name.indexOf("ModelEdit_px@3dmax") >= 0 )
-                {
-                    layers[i].style3D.bottomAltitude =-150;
-                }
-                if (layers[i].name.indexOf("New_Region3D_1@LH1_1") >= 0)
-                { //中间水面
-                    layers[i].style3D.bottomAltitude = 0;
-                }
-                if (layers[i].name.indexOf("New_Region3D@LH1_1") >= 0)
-                { //大坝水面
-                    layers[i].style3D.bottomAltitude = 0;
-                }
-                if (layers[i].name.indexOf("Config2") >= 0)
-                {//模型
-                    layers[i].style3D.bottomAltitude =-150;
-                }
-                layers[i].refresh();
-            }
-        });
+
         //显存优化
         viewer.scene.logarithmicDepthBuffer = false;
         scene.globe.depthTestAgainstTerrain = false;
+        setTimeout(add3D,1500);
         flyManager.play();
+
     }
 
     //相机飞行
