@@ -273,7 +273,7 @@ function add3D() {
         //显存优化
         viewer.scene.logarithmicDepthBuffer = false;
         scene.globe.depthTestAgainstTerrain = false;
-        setTimeout(add3D,1000 * 10);
+        setTimeout(add3D,1000 * 60);
         flyManager.play();
 
     }
